@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────
+# BOURSE DE CASABLANCA — .gitignore
+# ─────────────────────────────────────────────────────────
+
+# ── Secrets & config locaux ───────────────────────────────
+.env                        # Variables d'environnement (mots de passe, URLs)
+
+# ── Python ────────────────────────────────────────────────
+venv/                       # Environnement virtuel Python
+__pycache__/                # Cache Python compilé
+*.pyc                       # Fichiers bytecode
+*.pyo
+*.pyd
+.pytest_cache/              # Cache des tests pytest
+.mypy_cache/                # Cache de l'analyse de types
+
+# ── Docker ────────────────────────────────────────────────
+cassandra-data/             # Données persistantes Cassandra (volume Docker)
+metabase-data/              # Données persistantes Metabase
+
+# ── Éditeurs & OS ─────────────────────────────────────────
+.vscode/                    # Config VS Code personnelle
+.idea/                      # Config IntelliJ/PyCharm
+*.DS_Store                  # Fichiers macOS
+Thumbs.db                   # Fichiers Windows
+
+# ── Logs & temporaires ────────────────────────────────────
+*.log
+logs/
+tmp/
