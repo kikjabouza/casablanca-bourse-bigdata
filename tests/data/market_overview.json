@@ -1,0 +1,111 @@
+{
+  "scraped_at": "2026-05-31T04:48:10.174273",
+  "date": "2026-05-31",
+  "indices": {
+    "MASI": {
+      "value": 19023.8715,
+      "variation": 0.0,
+      "annual_variation": 0.0
+    },
+    "MASI20": {
+      "value": 19007.4031,
+      "variation": 0.0,
+      "annual_variation": 0.0
+    },
+    "MASI_ESG": {
+      "value": 19007.4031,
+      "variation": 0.0,
+      "annual_variation": 0.0
+    }
+  },
+  "market_stats": {
+    "global_volume": 327305330.0,
+    "market_cap": 1100599078067.0
+  },
+  "futures": [
+    {
+      "name": "MASI20 FUTURE JUI26",
+      "value": 1358.3,
+      "variation": 1358.3
+    },
+    {
+      "name": "MASI20 FUTURE SEP26",
+      "value": 1356.4,
+      "variation": 1357.4
+    }
+  ],
+  "top_gainers": [
+    {
+      "ticker": "ADH",
+      "name": "ADH",
+      "price": 32.8,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "ADI",
+      "name": "ADI",
+      "price": 410.0,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "ATL",
+      "name": "ATL",
+      "price": 129.3,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "ATW",
+      "name": "ATW",
+      "price": 698.0,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "BCP",
+      "name": "BCP",
+      "price": 240.0,
+      "difference": 0.0,
+      "variation": 0.0
+    }
+  ],
+  "top_losers": [
+    {
+      "ticker": "ADH",
+      "name": "ADH",
+      "price": 32.8,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "ADI",
+      "name": "ADI",
+      "price": 410.0,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "ATL",
+      "name": "ATL",
+      "price": 129.3,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "ATW",
+      "name": "ATW",
+      "price": 698.0,
+      "difference": 0.0,
+      "variation": 0.0
+    },
+    {
+      "ticker": "BCP",
+      "name": "BCP",
+      "price": 240.0,
+      "difference": 0.0,
+      "variation": 0.0
+    }
+  ]
+}

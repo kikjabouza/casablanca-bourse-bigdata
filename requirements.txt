@@ -1,27 +1,22 @@
-# ─────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────
 # BOURSE DE CASABLANCA — Dépendances Python
-# ─────────────────────────────────────────────
 # Installer avec : pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────
 
-# ── Phase 1 · Scraping (Khadija) ──────────────
-requests==2.31.0          # Requêtes HTTP vers le site de la bourse
-beautifulsoup4==4.12.3    # Parsing HTML
-lxml==5.2.1               # Parser HTML rapide (utilisé par BeautifulSoup)
-pandas==2.2.2             # Manipulation et nettoyage des données
-pydantic==2.7.1           # Validation des données scrapées
+# ── Scraping ───────────────────────────────────────────────
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.2.1
+pandas==2.2.2
+pydantic==2.7.1
 
-# ── Phase 2 · Orchestration & Stockage (Joyce) ─
-prefect==2.19.3           # Orchestration des flows (scheduling, monitoring)
-cassandra-driver==3.29.1  # Connexion à Cassandra depuis Python
+# ── Orchestration & Stockage ───────────────────────────────
+prefect==2.19.3
+cassandra-driver==3.29.1
 
-# ── Phase 3 · Analyse (Riad) ──────────────────
-# Trino et Metabase sont des services Docker, pas des packages Python.
-# Riad utilise le client Trino directement via http://localhost:8080
-# ou via le package ci-dessous pour tester des requêtes en Python :
-trino==0.328.0            # Client Python pour Trino (optionnel)
+# ── Utilitaires partagés ──────────────────────────────────
+python-dotenv==1.0.1
+loguru==0.7.2
 
-# ── Utilitaires partagés ───────────────────────
-python-dotenv==1.0.1      # Lire les variables d'environnement depuis .env
-loguru==0.7.2             # Logging lisible et coloré
-pytest==8.2.0             # Tests unitaires
-pytest-mock==3.14.0       # Mocking pour les tests (ex: simuler une réponse HTTP)
+# ── Tests ─────────────────────────────────────────────────
+pytest==8.2.0

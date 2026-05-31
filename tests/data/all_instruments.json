@@ -1,0 +1,27 @@
+[
+  {
+    "ticker": "MNG",
+    "name": "MNG",
+    "id": 500
+  },
+  {
+    "ticker": "BCP",
+    "name": "BCP",
+    "id": 509
+  },
+  {
+    "ticker": "ATW",
+    "name": "ATW",
+    "id": 511
+  },
+  {
+    "ticker": "IAM",
+    "name": "IAM",
+    "id": 510
+  },
+  {
+    "ticker": "AGM",
+    "name": "AGM",
+    "id": 491
+  }
+]

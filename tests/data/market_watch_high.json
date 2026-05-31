@@ -1,0 +1,3994 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http://jsonapi.org/format/1.0/"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "type": "market_watch",
+      "id": "6ab51a8b-4c2d-497f-973e-6c6aa45bba59",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6ab51a8b-4c2d-497f-973e-6c6aa45bba59"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766339,
+        "code": "ADH-6a155431db71f",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "33.0000000000",
+        "bestAskSize": "2130.0000000000",
+        "bestBidPrice": "32.1400000000",
+        "bestBidSize": "6.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "32.8000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "6340.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "50.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "62.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "7403.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "14.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "58540.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "5222.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "1887.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "200.0000000000",
+            "executedPrice": "32.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:20",
+            "executedSize": "387.0000000000",
+            "executedPrice": "32.8000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6ab51a8b-4c2d-497f-973e-6c6aa45bba59/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6ab51a8b-4c2d-497f-973e-6c6aa45bba59/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6ab51a8b-4c2d-497f-973e-6c6aa45bba59/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6ab51a8b-4c2d-497f-973e-6c6aa45bba59/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "a7d4c1c4-b81c-4173-8012-1ead20899a3a",
+            "meta": {
+              "drupal_internal__target_id": 525
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6ab51a8b-4c2d-497f-973e-6c6aa45bba59/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6ab51a8b-4c2d-497f-973e-6c6aa45bba59/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "8e3cf18a-c455-445b-aca7-78bf5314ca43",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8e3cf18a-c455-445b-aca7-78bf5314ca43"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766340,
+        "code": "ADI-6a1554325f55f",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "439.4000000000",
+        "bestAskSize": "50.0000000000",
+        "bestBidPrice": "422.1000000000",
+        "bestBidSize": "500.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "410.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:35:37",
+            "executedSize": "5.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:23",
+            "executedSize": "20.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:23",
+            "executedSize": "17.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:23",
+            "executedSize": "40.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:46",
+            "executedSize": "5.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:46",
+            "executedSize": "73.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:46",
+            "executedSize": "3.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:46",
+            "executedSize": "1500.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:46",
+            "executedSize": "2.0000000000",
+            "executedPrice": "410.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:46",
+            "executedSize": "3.0000000000",
+            "executedPrice": "410.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8e3cf18a-c455-445b-aca7-78bf5314ca43/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8e3cf18a-c455-445b-aca7-78bf5314ca43/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8e3cf18a-c455-445b-aca7-78bf5314ca43/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8e3cf18a-c455-445b-aca7-78bf5314ca43/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "7a5232a0-9923-4376-aa1b-a2fac8c56bb0",
+            "meta": {
+              "drupal_internal__target_id": 379
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8e3cf18a-c455-445b-aca7-78bf5314ca43/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8e3cf18a-c455-445b-aca7-78bf5314ca43/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "f7cdc917-74ed-49be-88a7-916166750fa2",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/f7cdc917-74ed-49be-88a7-916166750fa2"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766341,
+        "code": "ATL-6a1554329a642",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "131.7000000000",
+        "bestAskSize": "3.0000000000",
+        "bestBidPrice": "130.0000000000",
+        "bestBidSize": "10.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "129.3000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:39:47",
+            "executedSize": "4.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:39:00",
+            "executedSize": "4.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:38:52",
+            "executedSize": "4.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:38:01",
+            "executedSize": "20.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:33:32",
+            "executedSize": "5.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:54",
+            "executedSize": "50.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:54",
+            "executedSize": "6.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:54",
+            "executedSize": "10.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:54",
+            "executedSize": "11.0000000000",
+            "executedPrice": "129.3000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:54",
+            "executedSize": "5.0000000000",
+            "executedPrice": "129.3000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/f7cdc917-74ed-49be-88a7-916166750fa2/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/f7cdc917-74ed-49be-88a7-916166750fa2/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/f7cdc917-74ed-49be-88a7-916166750fa2/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/f7cdc917-74ed-49be-88a7-916166750fa2/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "78a1244b-4ae0-498c-9bbc-17405c612e99",
+            "meta": {
+              "drupal_internal__target_id": 365
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/f7cdc917-74ed-49be-88a7-916166750fa2/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/f7cdc917-74ed-49be-88a7-916166750fa2/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "01315edb-c60c-4a79-ad14-56439c3136b9",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/01315edb-c60c-4a79-ad14-56439c3136b9"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766342,
+        "code": "ATW-6a155432c8766",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "700.0000000000",
+        "bestAskSize": "3022.0000000000",
+        "bestBidPrice": "690.0000000000",
+        "bestBidSize": "5.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "698.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:35:37",
+            "executedSize": "10.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:34:46",
+            "executedSize": "12.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:34:46",
+            "executedSize": "488.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:34:44",
+            "executedSize": "400.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:20",
+            "executedSize": "144.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:20",
+            "executedSize": "3964.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:20",
+            "executedSize": "18.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:20",
+            "executedSize": "1500.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:20",
+            "executedSize": "125.0000000000",
+            "executedPrice": "698.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:20",
+            "executedSize": "1559.0000000000",
+            "executedPrice": "698.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/01315edb-c60c-4a79-ad14-56439c3136b9/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/01315edb-c60c-4a79-ad14-56439c3136b9/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/01315edb-c60c-4a79-ad14-56439c3136b9/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/01315edb-c60c-4a79-ad14-56439c3136b9/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "516f7633-4ec1-4c3f-b713-7d4150177670",
+            "meta": {
+              "drupal_internal__target_id": 511
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/01315edb-c60c-4a79-ad14-56439c3136b9/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/01315edb-c60c-4a79-ad14-56439c3136b9/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766343,
+        "code": "BCP-6a1554330222a",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "243.9000000000",
+        "bestAskSize": "100.0000000000",
+        "bestBidPrice": "239.0000000000",
+        "bestBidSize": "118.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "240.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:35:26",
+            "executedSize": "10.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "300.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "10.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "10.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "1500.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "19473.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "24754.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "15.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "12166.0000000000",
+            "executedPrice": "240.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:50",
+            "executedSize": "20.0000000000",
+            "executedPrice": "240.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "75074611-9a79-495b-8715-2634841a510b",
+            "meta": {
+              "drupal_internal__target_id": 509
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6315ccbe-c5f3-4ab9-b7d0-b56eb97999f1/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "320967e9-a4ff-4bee-be5d-2afbc2cd10dc",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/320967e9-a4ff-4bee-be5d-2afbc2cd10dc"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766344,
+        "code": "CIH-6a1554332dd7d",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "362.0000000000",
+        "bestAskSize": "80.0000000000",
+        "bestBidPrice": "356.1000000000",
+        "bestBidSize": "140.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "355.2000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:40:23",
+            "executedSize": "2.0000000000",
+            "executedPrice": "355.2000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:40:23",
+            "executedSize": "40.0000000000",
+            "executedPrice": "355.2000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:40:23",
+            "executedSize": "50.0000000000",
+            "executedPrice": "355.2000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:19:49",
+            "executedSize": "10.0000000000",
+            "executedPrice": "355.2000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:07:03",
+            "executedSize": "28.0000000000",
+            "executedPrice": "356.1000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:07:03",
+            "executedSize": "29.0000000000",
+            "executedPrice": "355.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:07:03",
+            "executedSize": "61.0000000000",
+            "executedPrice": "356.1000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:07:03",
+            "executedSize": "18.0000000000",
+            "executedPrice": "356.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:07:03",
+            "executedSize": "20.0000000000",
+            "executedPrice": "356.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:07:03",
+            "executedSize": "10.0000000000",
+            "executedPrice": "356.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/320967e9-a4ff-4bee-be5d-2afbc2cd10dc/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/320967e9-a4ff-4bee-be5d-2afbc2cd10dc/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/320967e9-a4ff-4bee-be5d-2afbc2cd10dc/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/320967e9-a4ff-4bee-be5d-2afbc2cd10dc/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "80cdc024-31f7-4902-b998-97972eec688d",
+            "meta": {
+              "drupal_internal__target_id": 449
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/320967e9-a4ff-4bee-be5d-2afbc2cd10dc/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/320967e9-a4ff-4bee-be5d-2afbc2cd10dc/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "a92c1d20-b215-4516-9d7b-f70a30f6d531",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/a92c1d20-b215-4516-9d7b-f70a30f6d531"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766345,
+        "code": "CSR-6a15543372006",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "189.0000000000",
+        "bestAskSize": "50.0000000000",
+        "bestBidPrice": "183.0000000000",
+        "bestBidSize": "25.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "184.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:40:14",
+            "executedSize": "370.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:38:25",
+            "executedSize": "130.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:36:00",
+            "executedSize": "150.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:35:55",
+            "executedSize": "5.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:35:34",
+            "executedSize": "300.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:34:26",
+            "executedSize": "10.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:24",
+            "executedSize": "10.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:24",
+            "executedSize": "30.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:24",
+            "executedSize": "38.0000000000",
+            "executedPrice": "184.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:24",
+            "executedSize": "15.0000000000",
+            "executedPrice": "184.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/a92c1d20-b215-4516-9d7b-f70a30f6d531/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/a92c1d20-b215-4516-9d7b-f70a30f6d531/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/a92c1d20-b215-4516-9d7b-f70a30f6d531/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/a92c1d20-b215-4516-9d7b-f70a30f6d531/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "b9933211-d96f-4063-84b1-f21a9d4d0137",
+            "meta": {
+              "drupal_internal__target_id": 465
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/a92c1d20-b215-4516-9d7b-f70a30f6d531/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/a92c1d20-b215-4516-9d7b-f70a30f6d531/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766346,
+        "code": "DHO-6a155433ce74f",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "60.5000000000",
+        "bestAskSize": "4907.0000000000",
+        "bestBidPrice": "57.0000000000",
+        "bestBidSize": "190.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "58.6900000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:36:38",
+            "executedSize": "100.0000000000",
+            "executedPrice": "58.6900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:48",
+            "executedSize": "5.0000000000",
+            "executedPrice": "58.6900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:48",
+            "executedSize": "1583.0000000000",
+            "executedPrice": "58.6900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:48",
+            "executedSize": "912.0000000000",
+            "executedPrice": "58.6900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:03:36",
+            "executedSize": "10.0000000000",
+            "executedPrice": "58.6900000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:58:56",
+            "executedSize": "20.0000000000",
+            "executedPrice": "57.6000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:58:56",
+            "executedSize": "29.0000000000",
+            "executedPrice": "57.5700000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:15:16",
+            "executedSize": "100.0000000000",
+            "executedPrice": "58.6900000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:34:49",
+            "executedSize": "5.0000000000",
+            "executedPrice": "58.6900000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:32:07",
+            "executedSize": "1.0000000000",
+            "executedPrice": "57.5700000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "0fd2df19-fe09-45a1-b38a-bf9f2d894df6",
+            "meta": {
+              "drupal_internal__target_id": 371
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eb0c9db6-93c9-4c7b-97c4-c5657e59c1c4/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "e30fa54f-a101-417b-8024-5aef6be431d2",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e30fa54f-a101-417b-8024-5aef6be431d2"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766347,
+        "code": "IAM-6a1554340c9a3",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "94.9900000000",
+        "bestAskSize": "2.0000000000",
+        "bestBidPrice": "93.0000000000",
+        "bestBidSize": "10.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "93.3300000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:35:37",
+            "executedSize": "2000.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "50.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "45.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "107.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "10.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "1683.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "62.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "12885.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "20.0000000000",
+            "executedPrice": "93.3300000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:09",
+            "executedSize": "260.0000000000",
+            "executedPrice": "93.3300000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e30fa54f-a101-417b-8024-5aef6be431d2/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e30fa54f-a101-417b-8024-5aef6be431d2/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e30fa54f-a101-417b-8024-5aef6be431d2/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e30fa54f-a101-417b-8024-5aef6be431d2/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "592fbaec-dff3-4eaf-b44c-c0ba38d4056f",
+            "meta": {
+              "drupal_internal__target_id": 510
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e30fa54f-a101-417b-8024-5aef6be431d2/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e30fa54f-a101-417b-8024-5aef6be431d2/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "03a916c1-d392-42ad-8450-2054064ab8ca",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/03a916c1-d392-42ad-8450-2054064ab8ca"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766348,
+        "code": "LES-6a15543455180",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "365.0000000000",
+        "bestAskSize": "57.0000000000",
+        "bestBidPrice": "350.0000000000",
+        "bestBidSize": "200.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "360.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T12:45:18",
+            "executedSize": "1.0000000000",
+            "executedPrice": "360.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:45:18",
+            "executedSize": "1.0000000000",
+            "executedPrice": "360.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:49:55",
+            "executedSize": "11.0000000000",
+            "executedPrice": "360.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/03a916c1-d392-42ad-8450-2054064ab8ca/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/03a916c1-d392-42ad-8450-2054064ab8ca/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/03a916c1-d392-42ad-8450-2054064ab8ca/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/03a916c1-d392-42ad-8450-2054064ab8ca/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "e64e4f17-95ad-42da-8ea3-5192ecd9f8bc",
+            "meta": {
+              "drupal_internal__target_id": 474
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/03a916c1-d392-42ad-8450-2054064ab8ca/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/03a916c1-d392-42ad-8450-2054064ab8ca/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "8a08ff74-d990-4f6c-a452-85e8efd16b1b",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8a08ff74-d990-4f6c-a452-85e8efd16b1b"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766349,
+        "code": "MDP-6a1554348d249",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "25.4000000000",
+        "bestAskSize": "200.0000000000",
+        "bestBidPrice": "24.0100000000",
+        "bestBidSize": "240.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "24.9900000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T14:40:29",
+            "executedSize": "1.0000000000",
+            "executedPrice": "24.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:09:45",
+            "executedSize": "115.0000000000",
+            "executedPrice": "24.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:13",
+            "executedSize": "1.0000000000",
+            "executedPrice": "24.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:13",
+            "executedSize": "1.0000000000",
+            "executedPrice": "24.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:13",
+            "executedSize": "23.0000000000",
+            "executedPrice": "24.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:13",
+            "executedSize": "4.0000000000",
+            "executedPrice": "24.5000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8a08ff74-d990-4f6c-a452-85e8efd16b1b/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8a08ff74-d990-4f6c-a452-85e8efd16b1b/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8a08ff74-d990-4f6c-a452-85e8efd16b1b/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8a08ff74-d990-4f6c-a452-85e8efd16b1b/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "6139ee8f-3374-48ef-9557-ecb716413299",
+            "meta": {
+              "drupal_internal__target_id": 489
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8a08ff74-d990-4f6c-a452-85e8efd16b1b/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8a08ff74-d990-4f6c-a452-85e8efd16b1b/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "7bae647e-b322-4937-a4dc-a8ae29563ef9",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/7bae647e-b322-4937-a4dc-a8ae29563ef9"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766350,
+        "code": "RDS-6a155434cd8bc",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "173.0000000000",
+        "bestAskSize": "230.0000000000",
+        "bestBidPrice": "166.2000000000",
+        "bestBidSize": "360.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "167.7000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:37:44",
+            "executedSize": "28.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:35",
+            "executedSize": "100.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "365.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "663.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "121.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "1288.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "200.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "200.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "171.0000000000",
+            "executedPrice": "167.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:30:13",
+            "executedSize": "200.0000000000",
+            "executedPrice": "167.7000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/7bae647e-b322-4937-a4dc-a8ae29563ef9/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/7bae647e-b322-4937-a4dc-a8ae29563ef9/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/7bae647e-b322-4937-a4dc-a8ae29563ef9/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/7bae647e-b322-4937-a4dc-a8ae29563ef9/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "5c62c1ee-d530-42ac-b090-750fe206ab33",
+            "meta": {
+              "drupal_internal__target_id": 389
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/7bae647e-b322-4937-a4dc-a8ae29563ef9/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/7bae647e-b322-4937-a4dc-a8ae29563ef9/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "0d2373e9-5755-4e98-99b9-b4caa8fa0d78",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0d2373e9-5755-4e98-99b9-b4caa8fa0d78"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766351,
+        "code": "TMA-6a1554353809e",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "1620.0000000000",
+        "bestAskSize": "21.0000000000",
+        "bestBidPrice": "1550.0000000000",
+        "bestBidSize": "61.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "1599.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:31:25",
+            "executedSize": "5.0000000000",
+            "executedPrice": "1599.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:31:25",
+            "executedSize": "2.0000000000",
+            "executedPrice": "1599.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:19:05",
+            "executedSize": "2.0000000000",
+            "executedPrice": "1599.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:59:47",
+            "executedSize": "1.0000000000",
+            "executedPrice": "1600.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:15:08",
+            "executedSize": "1.0000000000",
+            "executedPrice": "1600.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:48:36",
+            "executedSize": "2.0000000000",
+            "executedPrice": "1600.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:44:23",
+            "executedSize": "1.0000000000",
+            "executedPrice": "1608.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:32:48",
+            "executedSize": "1.0000000000",
+            "executedPrice": "1607.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:54:37",
+            "executedSize": "10.0000000000",
+            "executedPrice": "1609.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:44:46",
+            "executedSize": "2.0000000000",
+            "executedPrice": "1608.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0d2373e9-5755-4e98-99b9-b4caa8fa0d78/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0d2373e9-5755-4e98-99b9-b4caa8fa0d78/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0d2373e9-5755-4e98-99b9-b4caa8fa0d78/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0d2373e9-5755-4e98-99b9-b4caa8fa0d78/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "dcce15a2-04a0-43d1-8314-32b4dc83fbd9",
+            "meta": {
+              "drupal_internal__target_id": 390
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0d2373e9-5755-4e98-99b9-b4caa8fa0d78/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0d2373e9-5755-4e98-99b9-b4caa8fa0d78/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "eca0f274-f3de-477b-8cb5-04ac33fa5932",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eca0f274-f3de-477b-8cb5-04ac33fa5932"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766352,
+        "code": "TQM-6a15543571410",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "1820.0000000000",
+        "bestAskSize": "36.0000000000",
+        "bestBidPrice": "1800.0000000000",
+        "bestBidSize": "10.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "1809.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:32:32",
+            "executedSize": "1.0000000000",
+            "executedPrice": "1809.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:32",
+            "executedSize": "10.0000000000",
+            "executedPrice": "1809.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:08:30",
+            "executedSize": "3.0000000000",
+            "executedPrice": "1810.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:07:20",
+            "executedSize": "2.0000000000",
+            "executedPrice": "1796.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:02:37",
+            "executedSize": "12.0000000000",
+            "executedPrice": "1805.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:56:33",
+            "executedSize": "48.0000000000",
+            "executedPrice": "1810.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:54:39",
+            "executedSize": "10.0000000000",
+            "executedPrice": "1805.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:26:24",
+            "executedSize": "3.0000000000",
+            "executedPrice": "1809.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:01:31",
+            "executedSize": "11.0000000000",
+            "executedPrice": "1810.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:51:48",
+            "executedSize": "10.0000000000",
+            "executedPrice": "1800.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eca0f274-f3de-477b-8cb5-04ac33fa5932/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eca0f274-f3de-477b-8cb5-04ac33fa5932/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eca0f274-f3de-477b-8cb5-04ac33fa5932/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eca0f274-f3de-477b-8cb5-04ac33fa5932/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "c00d30ae-a43b-47fc-859d-bf0aba374483",
+            "meta": {
+              "drupal_internal__target_id": 387
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eca0f274-f3de-477b-8cb5-04ac33fa5932/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/eca0f274-f3de-477b-8cb5-04ac33fa5932/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "0de8d521-7bb6-4f34-ad90-4e9a03225bf0",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0de8d521-7bb6-4f34-ad90-4e9a03225bf0"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766353,
+        "code": "AFI-6a155435a8e47",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "360.0000000000",
+        "bestAskSize": "47.0000000000",
+        "bestBidPrice": "347.0000000000",
+        "bestBidSize": "53.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "356.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:32:07",
+            "executedSize": "1.0000000000",
+            "executedPrice": "356.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:15:20",
+            "executedSize": "1.0000000000",
+            "executedPrice": "348.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:15:08",
+            "executedSize": "3.0000000000",
+            "executedPrice": "356.9500000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:56:38",
+            "executedSize": "3.0000000000",
+            "executedPrice": "357.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:46:06",
+            "executedSize": "23.0000000000",
+            "executedPrice": "347.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:44:58",
+            "executedSize": "10.0000000000",
+            "executedPrice": "347.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:44:26",
+            "executedSize": "2.0000000000",
+            "executedPrice": "347.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:44:15",
+            "executedSize": "80.0000000000",
+            "executedPrice": "347.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:37:41",
+            "executedSize": "53.0000000000",
+            "executedPrice": "347.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:37:41",
+            "executedSize": "10.0000000000",
+            "executedPrice": "347.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0de8d521-7bb6-4f34-ad90-4e9a03225bf0/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0de8d521-7bb6-4f34-ad90-4e9a03225bf0/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0de8d521-7bb6-4f34-ad90-4e9a03225bf0/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0de8d521-7bb6-4f34-ad90-4e9a03225bf0/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "8942b136-de4d-4b53-a3d3-ffbfc5602bde",
+            "meta": {
+              "drupal_internal__target_id": 385
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0de8d521-7bb6-4f34-ad90-4e9a03225bf0/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0de8d521-7bb6-4f34-ad90-4e9a03225bf0/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "426ea057-a534-4cd9-9089-6a6206ae3f9c",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/426ea057-a534-4cd9-9089-6a6206ae3f9c"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766354,
+        "code": "ALM-6a155435dbbb5",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "1945.0000000000",
+        "bestAskSize": "3.0000000000",
+        "bestBidPrice": "1867.0000000000",
+        "bestBidSize": "4.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "1866.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T11:23:55",
+            "executedSize": "8.0000000000",
+            "executedPrice": "1866.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:21:55",
+            "executedSize": "1.0000000000",
+            "executedPrice": "1867.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:21:55",
+            "executedSize": "3.0000000000",
+            "executedPrice": "1867.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:21:55",
+            "executedSize": "10.0000000000",
+            "executedPrice": "1867.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/426ea057-a534-4cd9-9089-6a6206ae3f9c/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/426ea057-a534-4cd9-9089-6a6206ae3f9c/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/426ea057-a534-4cd9-9089-6a6206ae3f9c/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/426ea057-a534-4cd9-9089-6a6206ae3f9c/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "3751220d-a8df-411a-8dbf-763ab5e0db81",
+            "meta": {
+              "drupal_internal__target_id": 490
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/426ea057-a534-4cd9-9089-6a6206ae3f9c/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/426ea057-a534-4cd9-9089-6a6206ae3f9c/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "ce8e4599-2973-4d10-b308-6933492fdae6",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ce8e4599-2973-4d10-b308-6933492fdae6"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766355,
+        "code": "ATH-6a1554362eb39",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "71.0000000000",
+        "bestAskSize": "500.0000000000",
+        "bestBidPrice": "68.4000000000",
+        "bestBidSize": "25.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "69.9900000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:40:01",
+            "executedSize": "100.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:39:45",
+            "executedSize": "200.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:35:37",
+            "executedSize": "50.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:51",
+            "executedSize": "13.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:51",
+            "executedSize": "693.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:51",
+            "executedSize": "134.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:51",
+            "executedSize": "40.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:51",
+            "executedSize": "50.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:51",
+            "executedSize": "25.0000000000",
+            "executedPrice": "69.9900000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:51",
+            "executedSize": "30.0000000000",
+            "executedPrice": "69.9900000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ce8e4599-2973-4d10-b308-6933492fdae6/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ce8e4599-2973-4d10-b308-6933492fdae6/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ce8e4599-2973-4d10-b308-6933492fdae6/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ce8e4599-2973-4d10-b308-6933492fdae6/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "20e56da2-4cef-4b64-b618-2a5c7dbdbcf6",
+            "meta": {
+              "drupal_internal__target_id": 452
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ce8e4599-2973-4d10-b308-6933492fdae6/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ce8e4599-2973-4d10-b308-6933492fdae6/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "cd7dcc7d-aaee-4fc3-8c52-0113f0259140",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/cd7dcc7d-aaee-4fc3-8c52-0113f0259140"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766356,
+        "code": "BCI-6a15543664e9e",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "599.0000000000",
+        "bestAskSize": "201.0000000000",
+        "bestBidPrice": "570.0000000000",
+        "bestBidSize": "20.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "598.8000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T10:49:54",
+            "executedSize": "50.0000000000",
+            "executedPrice": "598.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:49:54",
+            "executedSize": "100.0000000000",
+            "executedPrice": "598.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:49:54",
+            "executedSize": "198.0000000000",
+            "executedPrice": "598.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:49:54",
+            "executedSize": "152.0000000000",
+            "executedPrice": "598.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:30:58",
+            "executedSize": "3.0000000000",
+            "executedPrice": "598.8000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/cd7dcc7d-aaee-4fc3-8c52-0113f0259140/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/cd7dcc7d-aaee-4fc3-8c52-0113f0259140/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/cd7dcc7d-aaee-4fc3-8c52-0113f0259140/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/cd7dcc7d-aaee-4fc3-8c52-0113f0259140/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "58ca755c-deb1-477c-b4b9-430fff48e0ae",
+            "meta": {
+              "drupal_internal__target_id": 476
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/cd7dcc7d-aaee-4fc3-8c52-0113f0259140/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/cd7dcc7d-aaee-4fc3-8c52-0113f0259140/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "2e6b540a-6adb-45b8-8700-b9c804fa61e3",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2e6b540a-6adb-45b8-8700-b9c804fa61e3"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766357,
+        "code": "CMA-6a155436964fb",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "1700.0000000000",
+        "bestAskSize": "285.0000000000",
+        "bestBidPrice": "1650.0000000000",
+        "bestBidSize": "6.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "1650.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:33:46",
+            "executedSize": "81.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "2.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "100.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "5.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "20.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "10.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "246.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "207.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "4.0000000000",
+            "executedPrice": "1650.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:29",
+            "executedSize": "34.0000000000",
+            "executedPrice": "1650.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2e6b540a-6adb-45b8-8700-b9c804fa61e3/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2e6b540a-6adb-45b8-8700-b9c804fa61e3/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2e6b540a-6adb-45b8-8700-b9c804fa61e3/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2e6b540a-6adb-45b8-8700-b9c804fa61e3/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "b9c9bc94-29ea-4888-aff6-c478e3a84c45",
+            "meta": {
+              "drupal_internal__target_id": 464
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2e6b540a-6adb-45b8-8700-b9c804fa61e3/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2e6b540a-6adb-45b8-8700-b9c804fa61e3/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "3053b399-36d8-4c24-afe5-97c1178e2de7",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/3053b399-36d8-4c24-afe5-97c1178e2de7"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766358,
+        "code": "CMT-6a155436bf531",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "4889.0000000000",
+        "bestAskSize": "13.0000000000",
+        "bestBidPrice": "4801.0000000000",
+        "bestBidSize": "5.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "5000.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:39:57",
+            "executedSize": "4.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:37:35",
+            "executedSize": "1.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:37:35",
+            "executedSize": "4.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:37:04",
+            "executedSize": "1.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:35:32",
+            "executedSize": "1.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:33:20",
+            "executedSize": "4.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:33:20",
+            "executedSize": "1.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:33:20",
+            "executedSize": "4.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:04",
+            "executedSize": "2.0000000000",
+            "executedPrice": "5000.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:04",
+            "executedSize": "2.0000000000",
+            "executedPrice": "5000.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/3053b399-36d8-4c24-afe5-97c1178e2de7/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/3053b399-36d8-4c24-afe5-97c1178e2de7/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/3053b399-36d8-4c24-afe5-97c1178e2de7/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/3053b399-36d8-4c24-afe5-97c1178e2de7/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "84436fe0-44df-4c19-91d7-9b5492ce7da5",
+            "meta": {
+              "drupal_internal__target_id": 374
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/3053b399-36d8-4c24-afe5-97c1178e2de7/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/3053b399-36d8-4c24-afe5-97c1178e2de7/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "45b7803f-ad49-4c07-956a-91d7ded99714",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/45b7803f-ad49-4c07-956a-91d7ded99714"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766359,
+        "code": "COL-6a15543707bb0",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": true,
+        "bestAskPrice": "81.0000000000",
+        "bestAskSize": "19.0000000000",
+        "bestBidPrice": "79.0000000000",
+        "bestBidSize": "50.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "80.7000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T14:25:03",
+            "executedSize": "1.0000000000",
+            "executedPrice": "80.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:36:16",
+            "executedSize": "1.0000000000",
+            "executedPrice": "80.9000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:04:11",
+            "executedSize": "10.0000000000",
+            "executedPrice": "80.9000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:03",
+            "executedSize": "100.0000000000",
+            "executedPrice": "79.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:03",
+            "executedSize": "55.0000000000",
+            "executedPrice": "79.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:03",
+            "executedSize": "125.0000000000",
+            "executedPrice": "79.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:03",
+            "executedSize": "41.0000000000",
+            "executedPrice": "79.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:03",
+            "executedSize": "50.0000000000",
+            "executedPrice": "79.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:03",
+            "executedSize": "40.0000000000",
+            "executedPrice": "79.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:32:03",
+            "executedSize": "1.0000000000",
+            "executedPrice": "79.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/45b7803f-ad49-4c07-956a-91d7ded99714/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/45b7803f-ad49-4c07-956a-91d7ded99714/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/45b7803f-ad49-4c07-956a-91d7ded99714/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/45b7803f-ad49-4c07-956a-91d7ded99714/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "d0031547-ce7e-4352-bb57-5e6bf6bfc54c",
+            "meta": {
+              "drupal_internal__target_id": 530
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/45b7803f-ad49-4c07-956a-91d7ded99714/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/45b7803f-ad49-4c07-956a-91d7ded99714/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "8fbf8784-c43b-4e43-a2a2-4ca485a44461",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8fbf8784-c43b-4e43-a2a2-4ca485a44461"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766360,
+        "code": "CRS-6a15543738148",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "30.9400000000",
+        "bestAskSize": "1.0000000000",
+        "bestBidPrice": "30.0100000000",
+        "bestBidSize": "10.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "30.9400000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T14:45:21",
+            "executedSize": "1.0000000000",
+            "executedPrice": "30.9400000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:45:21",
+            "executedSize": "19.0000000000",
+            "executedPrice": "30.9400000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:30:28",
+            "executedSize": "18.0000000000",
+            "executedPrice": "30.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:18:25",
+            "executedSize": "5.0000000000",
+            "executedPrice": "30.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:10:04",
+            "executedSize": "2.0000000000",
+            "executedPrice": "30.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:40:18",
+            "executedSize": "74.0000000000",
+            "executedPrice": "29.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:35:45",
+            "executedSize": "30.0000000000",
+            "executedPrice": "29.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:26:02",
+            "executedSize": "10.0000000000",
+            "executedPrice": "30.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:26:02",
+            "executedSize": "5000.0000000000",
+            "executedPrice": "30.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:26:02",
+            "executedSize": "10.0000000000",
+            "executedPrice": "30.0100000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8fbf8784-c43b-4e43-a2a2-4ca485a44461/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8fbf8784-c43b-4e43-a2a2-4ca485a44461/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8fbf8784-c43b-4e43-a2a2-4ca485a44461/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8fbf8784-c43b-4e43-a2a2-4ca485a44461/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "819ec6d0-0a99-4703-9d59-d3170761cdd8",
+            "meta": {
+              "drupal_internal__target_id": 521
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8fbf8784-c43b-4e43-a2a2-4ca485a44461/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/8fbf8784-c43b-4e43-a2a2-4ca485a44461/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "5ac2bc09-dec8-483a-b1a5-649960cfcd29",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ac2bc09-dec8-483a-b1a5-649960cfcd29"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766361,
+        "code": "CTM-6a1554376fe2c",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "887.9000000000",
+        "bestAskSize": "27.0000000000",
+        "bestBidPrice": "839.0000000000",
+        "bestBidSize": "10.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "900.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T12:57:09",
+            "executedSize": "1.0000000000",
+            "executedPrice": "900.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:56:40",
+            "executedSize": "1.0000000000",
+            "executedPrice": "892.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:56:40",
+            "executedSize": "3.0000000000",
+            "executedPrice": "893.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:56:04",
+            "executedSize": "2.0000000000",
+            "executedPrice": "892.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:55:57",
+            "executedSize": "3.0000000000",
+            "executedPrice": "892.5000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:55:07",
+            "executedSize": "11.0000000000",
+            "executedPrice": "887.9000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:50:12",
+            "executedSize": "10.0000000000",
+            "executedPrice": "887.9000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:48:24",
+            "executedSize": "1.0000000000",
+            "executedPrice": "887.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:48:24",
+            "executedSize": "10.0000000000",
+            "executedPrice": "887.8000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:48:24",
+            "executedSize": "6.0000000000",
+            "executedPrice": "887.9000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ac2bc09-dec8-483a-b1a5-649960cfcd29/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ac2bc09-dec8-483a-b1a5-649960cfcd29/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ac2bc09-dec8-483a-b1a5-649960cfcd29/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ac2bc09-dec8-483a-b1a5-649960cfcd29/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "07edbd74-7237-41d6-8d61-5b2df2e323bb",
+            "meta": {
+              "drupal_internal__target_id": 428
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ac2bc09-dec8-483a-b1a5-649960cfcd29/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ac2bc09-dec8-483a-b1a5-649960cfcd29/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "4506f457-2a4a-4b99-adde-92f0b03925ab",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4506f457-2a4a-4b99-adde-92f0b03925ab"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766362,
+        "code": "FBR-6a155437a3ae6",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "311.9000000000",
+        "bestAskSize": "15.0000000000",
+        "bestBidPrice": "295.2000000000",
+        "bestBidSize": "39.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "300.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:16:52",
+            "executedSize": "20.0000000000",
+            "executedPrice": "300.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:05:08",
+            "executedSize": "1.0000000000",
+            "executedPrice": "296.0500000000"
+          },
+          {
+            "transactTime": "2026-05-26T14:05:08",
+            "executedSize": "7.0000000000",
+            "executedPrice": "296.0500000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:55:37",
+            "executedSize": "8.0000000000",
+            "executedPrice": "306.7000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:08:17",
+            "executedSize": "1.0000000000",
+            "executedPrice": "306.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:27:06",
+            "executedSize": "8.0000000000",
+            "executedPrice": "295.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:27:06",
+            "executedSize": "23.0000000000",
+            "executedPrice": "295.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:27:06",
+            "executedSize": "8.0000000000",
+            "executedPrice": "295.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:27:06",
+            "executedSize": "50.0000000000",
+            "executedPrice": "295.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:27:06",
+            "executedSize": "8.0000000000",
+            "executedPrice": "295.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4506f457-2a4a-4b99-adde-92f0b03925ab/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4506f457-2a4a-4b99-adde-92f0b03925ab/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4506f457-2a4a-4b99-adde-92f0b03925ab/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4506f457-2a4a-4b99-adde-92f0b03925ab/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "7049e75c-f43f-4ddc-8e47-f493a81e1fe2",
+            "meta": {
+              "drupal_internal__target_id": 532
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4506f457-2a4a-4b99-adde-92f0b03925ab/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4506f457-2a4a-4b99-adde-92f0b03925ab/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "d99cb281-7cf9-4971-9a03-dc78244558f1",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d99cb281-7cf9-4971-9a03-dc78244558f1"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766363,
+        "code": "HPS-6a155437cf0b7",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "637.5000000000",
+        "bestAskSize": "3.0000000000",
+        "bestBidPrice": "622.0000000000",
+        "bestBidSize": "21.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "615.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:40:44",
+            "executedSize": "194.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:40:23",
+            "executedSize": "500.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:39:22",
+            "executedSize": "10.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:38:47",
+            "executedSize": "296.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:37:28",
+            "executedSize": "500.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:37:28",
+            "executedSize": "204.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:34:51",
+            "executedSize": "15.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:34:51",
+            "executedSize": "1781.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:42",
+            "executedSize": "20.0000000000",
+            "executedPrice": "615.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T15:32:42",
+            "executedSize": "1.0000000000",
+            "executedPrice": "615.0000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d99cb281-7cf9-4971-9a03-dc78244558f1/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d99cb281-7cf9-4971-9a03-dc78244558f1/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d99cb281-7cf9-4971-9a03-dc78244558f1/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d99cb281-7cf9-4971-9a03-dc78244558f1/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "3dbdd444-7dc1-441f-86e6-969c08c666fe",
+            "meta": {
+              "drupal_internal__target_id": 535
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d99cb281-7cf9-4971-9a03-dc78244558f1/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d99cb281-7cf9-4971-9a03-dc78244558f1/relationships/symbol"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "market_watch",
+      "id": "b177ca5c-1070-46dd-8fa3-8dcafd8c1a75",
+      "links": {
+        "self": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b177ca5c-1070-46dd-8fa3-8dcafd8c1a75"
+        }
+      },
+      "attributes": {
+        "drupal_internal__id": 23766364,
+        "code": "INV-6a15543801f0c",
+        "published": true,
+        "is_flagged": null,
+        "has_alert": false,
+        "bestAskPrice": "147.0000000000",
+        "bestAskSize": "43.0000000000",
+        "bestBidPrice": "140.0000000000",
+        "bestBidSize": "825.0000000000",
+        "capitalisation": "0.0000000000",
+        "closingPrice": null,
+        "coursAjuste": null,
+        "coursCloture": "144.0000000000",
+        "coursCourant": null,
+        "cumulTitresEchanges": null,
+        "cumulVolumeEchange": null,
+        "dateEffetRatioAjustement": "2026-05-26T04:02:04+00:00",
+        "difference": null,
+        "dynamicReferencePrice": null,
+        "etatCotVal": "N.T",
+        "highPrice": null,
+        "instrumentVarYear": "-",
+        "lastTradedPrice": null,
+        "lastTradedTime": null,
+        "lastTransactions": [
+          {
+            "transactTime": "2026-05-26T15:17:32",
+            "executedSize": "10.0000000000",
+            "executedPrice": "144.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:50:28",
+            "executedSize": "18.0000000000",
+            "executedPrice": "141.6500000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:50:28",
+            "executedSize": "2.0000000000",
+            "executedPrice": "142.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:50:28",
+            "executedSize": "2.0000000000",
+            "executedPrice": "142.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:50:28",
+            "executedSize": "2.0000000000",
+            "executedPrice": "142.0500000000"
+          },
+          {
+            "transactTime": "2026-05-26T13:42:10",
+            "executedSize": "1.0000000000",
+            "executedPrice": "145.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T12:10:07",
+            "executedSize": "1.0000000000",
+            "executedPrice": "147.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T11:54:47",
+            "executedSize": "1.0000000000",
+            "executedPrice": "147.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T10:49:42",
+            "executedSize": "1.0000000000",
+            "executedPrice": "147.0000000000"
+          },
+          {
+            "transactTime": "2026-05-26T09:31:14",
+            "executedSize": "11.0000000000",
+            "executedPrice": "149.9000000000"
+          }
+        ],
+        "lowPrice": null,
+        "openingPrice": null,
+        "pto": null,
+        "ratioAjustement": "1.00",
+        "ratioConsolide": "1.00",
+        "staticReferencePrice": null,
+        "totalTrades": null,
+        "transactTime": "2026-05-26T04:02:04+00:00",
+        "varPTO": null,
+        "varVeille": null
+      },
+      "relationships": {
+        "bourse_data_type": {
+          "data": {
+            "type": "bourse_data_type--bourse_data_type",
+            "id": "4cec19dc-87c7-4e43-a017-088e40e48301",
+            "meta": {
+              "drupal_internal__target_id": "market_watch"
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b177ca5c-1070-46dd-8fa3-8dcafd8c1a75/bourse_data_type"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b177ca5c-1070-46dd-8fa3-8dcafd8c1a75/relationships/bourse_data_type"
+            }
+          }
+        },
+        "marketID": {
+          "data": {
+            "type": "type_marche",
+            "id": "2264be5f-10a8-43d9-b819-90d8bee4ef39",
+            "meta": {
+              "drupal_internal__target_id": 59
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b177ca5c-1070-46dd-8fa3-8dcafd8c1a75/marketID"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b177ca5c-1070-46dd-8fa3-8dcafd8c1a75/relationships/marketID"
+            }
+          }
+        },
+        "symbol": {
+          "data": {
+            "type": "instrument",
+            "id": "57da2d8c-a013-4633-912d-4e19014ecccb",
+            "meta": {
+              "drupal_internal__target_id": 534
+            }
+          },
+          "links": {
+            "related": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b177ca5c-1070-46dd-8fa3-8dcafd8c1a75/symbol"
+            },
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b177ca5c-1070-46dd-8fa3-8dcafd8c1a75/relationships/symbol"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "count": 17346,
+    "omitted": {
+      "detail": "Some resources have been omitted because of insufficient authorization.",
+      "links": {
+        "help": {
+          "href": "https://www.drupal.org/docs/8/modules/json-api/filtering#filters-access-control"
+        },
+        "item--sDjmYUr": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/2cab7127-bee1-47a0-a44c-543fa4979c35",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--DQk4KWU": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/28dfb765-c12b-4d2b-8693-66b9c45599e1",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--k08Zz20": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/4a0cbdf0-6805-49c1-8ffc-0c334bffc741",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--kstIuw1": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/56dafa0c-8ef0-42e1-88ee-f3339c8ba142",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--pEYgZB3": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6fb55bfc-dd32-4d14-adc9-89ca91a9f0aa",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--eSbLeId": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/017192a7-12c9-4a53-be30-76c72e652b48",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--KYWlKi9": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5c29db26-228d-45d3-a5d6-47431c898ea7",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--QK7gKKV": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e58f9735-c483-49e8-9b94-57f3a26b3065",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--SJ5FUkZ": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/b6c9361e-e8b5-498a-b141-de53352e1487",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--rfUktns": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/e4b560ce-aa47-4a7a-aff8-78fcae79e910",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--OLJnAqs": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/684c5f5e-2df4-4a80-8926-8f2511828840",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--IDwPYnY": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/9114a2bb-a55f-40f7-900c-8ef4a49892ee",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--j3XOusj": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/5ba820a1-b9b3-4b07-a8f6-8ec40f153cf2",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--dHLb6U7": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/6e05297c-4556-46fe-886c-4d22c6b30d8a",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--sW3BmwP": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/1ee43427-7cb8-40fe-8717-3e4464b99923",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--cYzriKR": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/290548db-49b9-4d02-90cc-798ad6feb1f8",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--7FeeSr2": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/167f2de4-ef4f-477f-9fcf-e7be898698de",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--FE8qY7k": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/ffdc772a-6fab-49d8-be85-6cee4f54a029",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--lMitAGI": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/70a69016-b41f-4f35-8024-8486605b7ca5",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--CJ71wzn": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/0cc39709-bc08-413e-b1c3-708e0eb0a558",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--CurwAu5": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/d568a539-1c9b-4934-aac5-6451f18bcc7c",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--QMWb6PR": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/1779511b-37f3-4e9c-b190-513c2add18ca",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--vmJfNgs": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/c66be28b-5e02-4d9b-818e-15be65cbcf81",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        },
+        "item--49tCm8h": {
+          "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch/58c0c2df-ccf0-4235-a7c1-a581ad194fd3",
+          "meta": {
+            "rel": "item",
+            "detail": "The current user is not allowed to GET the selected resource. The 'view unpublished bourse data entities' permission is required."
+          }
+        }
+      }
+    }
+  },
+  "links": {
+    "last": {
+      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch?mw_high%5Blimit%5D=5&mw_high%5Btype_marche%5D=59&mw_high%5Bclasses%5D%5B25%5D=25&mw_high%5Bss_classes%5D%5B38%5D=38&page%5Boffset%5D=17300&page%5Blimit%5D=50"
+    },
+    "next": {
+      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch?mw_high%5Blimit%5D=5&mw_high%5Btype_marche%5D=59&mw_high%5Bclasses%5D%5B25%5D=25&mw_high%5Bss_classes%5D%5B38%5D=38&page%5Boffset%5D=50&page%5Blimit%5D=50"
+    },
+    "self": {
+      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/market_watch?mw_high%5Blimit%5D=5&mw_high%5Btype_marche%5D=59&mw_high%5Bclasses%5D%5B25%5D=25&mw_high%5Bss_classes%5D%5B38%5D=38"
+    }
+  }
+}

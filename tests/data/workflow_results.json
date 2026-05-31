@@ -1,0 +1,47 @@
+{
+  "start_time": "2026-05-31T04:21:13.647216",
+  "instruments_tested": [
+    {
+      "ticker": "MNG",
+      "id": 500,
+      "details": {
+        "price": 17405.0,
+        "variation": 4.85,
+        "volume": 88984967.0,
+        "market_cap": 206504685780.0
+      },
+      "historical_count": 39,
+      "success": true
+    },
+    {
+      "ticker": "BCP",
+      "id": 509,
+      "details": {
+        "price": 240.0,
+        "variation": 0.0,
+        "volume": 20397876.2,
+        "market_cap": 48794993520.0
+      },
+      "historical_count": 39,
+      "success": true
+    },
+    {
+      "ticker": "ATW",
+      "id": 511,
+      "details": {
+        "price": 698.0,
+        "variation": -0.14,
+        "volume": 25168395.5,
+        "market_cap": 150168305622.0
+      },
+      "historical_count": 39,
+      "success": true
+    }
+  ],
+  "summary": {
+    "total_tested": 3,
+    "successful": 3,
+    "failed": 0
+  },
+  "end_time": "2026-05-31T04:21:23.415483"
+}

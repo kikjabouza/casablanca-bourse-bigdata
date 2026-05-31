@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-05-31 05:48:54",
+  "total_instruments": 3,
+  "details_success": 3,
+  "historical_success": 0,
+  "total_historical_days": 0,
+  "instruments": [
+    {
+      "ticker": "MNG",
+      "details_success": true,
+      "historical_success": false,
+      "historical_count": 0,
+      "price": 17405.0
+    },
+    {
+      "ticker": "BCP",
+      "details_success": true,
+      "historical_success": false,
+      "historical_count": 0,
+      "price": 240.0
+    },
+    {
+      "ticker": "ATW",
+      "details_success": true,
+      "historical_success": false,
+      "historical_count": 0,
+      "price": 698.0
+    }
+  ],
+  "market_overview": {
+    "indices": {
+      "MASI": {
+        "value": 19023.8715,
+        "variation": 0.0,
+        "annual_variation": 0.0
+      },
+      "MASI20": {
+        "value": 19007.4031,
+        "variation": 0.0,
+        "annual_variation": 0.0
+      },
+      "MASI_ESG": {
+        "value": 19007.4031,
+        "variation": 0.0,
+        "annual_variation": 0.0
+      }
+    },
+    "market_stats": {
+      "global_volume": 327305330.0,
+      "market_cap": 1100599078067.0
+    },
+    "top_gainers": [
+      {
+        "ticker": "ADH",
+        "name": "ADH",
+        "price": 32.8,
+        "difference": 0.0,
+        "variation": 0.0
+      },
+      {
+        "ticker": "ADI",
+        "name": "ADI",
+        "price": 410.0,
+        "difference": 0.0,
+        "variation": 0.0
+      },
+      {
+        "ticker": "ATL",
+        "name": "ATL",
+        "price": 129.3,
+        "difference": 0.0,
+        "variation": 0.0
+      }
+    ],
+    "top_losers": [
+      {
+        "ticker": "ADH",
+        "name": "ADH",
+        "price": 32.8,
+        "difference": 0.0,
+        "variation": 0.0
+      },
+      {
+        "ticker": "ADI",
+        "name": "ADI",
+        "price": 410.0,
+        "difference": 0.0,
+        "variation": 0.0
+      },
+      {
+        "ticker": "ATL",
+        "name": "ATL",
+        "price": 129.3,
+        "difference": 0.0,
+        "variation": 0.0
+      }
+    ]
+  }
+}

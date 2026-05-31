@@ -1,0 +1,44 @@
+# Prefect deployment configuration
+deployments:
+  - name: daily-update-17h
+    entrypoint: flows/daily_update_flow.py:daily_update_flow
+    work_pool:
+      name: default-agent-pool
+    schedule:
+      cron: "0 17 * * 1-5"
+      timezone: Africa/Casablanca
+    tags:
+      - bourse
+      - daily
+    description: Mise à jour quotidienne à 17h00 après clôture du marché
+
+  - name: intraday-monitoring-2min
+    entrypoint: flows/intraday_monitoring_flow.py:intraday_monitoring_flow
+    work_pool:
+      name: default-agent-pool
+    schedule:
+      cron: "*/2 9-16 * * 1-5"
+      timezone: Africa/Casablanca
+    tags:
+      - bourse
+      - intraday
+    description: Monitoring intraday toutes les 2 minutes pendant la séance
+
+  - name: initial-load-once
+    entrypoint: flows/initial_load_flow.py:initial_load_flow
+    work_pool:
+      name: default-agent-pool
+    tags:
+      - bourse
+      - initial
+    description: Chargement initial complet (exécution manuelle)
+
+prefect:
+  server:
+    api:
+      url: http://localhost:4200/api
+
+cassandra:
+  host: localhost
+  port: 9042
+  keyspace: bourse_data

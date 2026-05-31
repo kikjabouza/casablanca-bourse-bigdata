@@ -1,0 +1,1123 @@
+{
+  "auto_populate": false,
+  "pending_content": [],
+  "components": [
+    {
+      "group_link": {
+        "link": {
+          "title": "",
+          "url": "",
+          "attributes": {
+            "class": "",
+            "id": "-mtc0ndq1mzuyma",
+            "target": "_self",
+            "rel": ""
+          },
+          "is_external": false
+        }
+      },
+      "collection": {
+        "data": {
+          "jsonapi": {
+            "version": "1.0",
+            "meta": {
+              "links": {
+                "self": {
+                  "href": "http://jsonapi.org/format/1.0/"
+                }
+              }
+            }
+          },
+          "data": [
+            {
+              "type": "instrument_derive",
+              "id": "a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2"
+                }
+              },
+              "attributes": {
+                "drupal_internal__id": 22094327,
+                "symbol": "FMASI20DEC26",
+                "published": true,
+                "is_flagged": null,
+                "has_alert": null,
+                "aonAuctionDuration": null,
+                "codeInstrumentBourse": 2104,
+                "codeISIN": "MA0009000052",
+                "contractMultiplier": "10.0000",
+                "dateExpiration": "2026-12-18T00:00:00+00:00",
+                "dateIntroduction": "2026-04-06T00:00:00+00:00",
+                "dateLastReprise": null,
+                "dateLastSuspension": null,
+                "dateRadiation": "2026-12-21T00:00:00+00:00",
+                "deletionDate": null,
+                "field_instrument_url": "/fr/live-market/instruments-derives/FMASI20DEC26",
+                "lastTradingDay": "2026-12-18T00:00:00+00:00",
+                "libelleAR": "MASI20 FUTURE DEC26",
+                "libelleEN": "MASI20 FUTURE DEC26",
+                "libelleFR": "MASI20 FUTURE DEC26",
+                "mitInstrumentID": "exch7194",
+                "moisEcheance": "décembre",
+                "nombreTitres": null,
+                "radie": false,
+                "settlementDate": null
+              },
+              "relationships": {
+                "bourse_data_type": {
+                  "data": {
+                    "type": "bourse_data_type--bourse_data_type",
+                    "id": "f7ae3090-ed15-4697-8f47-6a071960e6e1",
+                    "meta": {
+                      "drupal_internal__target_id": "instrument_derive"
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/bourse_data_type"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/bourse_data_type"
+                    }
+                  }
+                },
+                "codeGroupe": {
+                  "data": {
+                    "type": "group_cotation",
+                    "id": "b37a1b94-6716-4b84-978e-2d9d6291e51e",
+                    "meta": {
+                      "drupal_internal__target_id": 1084671
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/codeGroupe"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/codeGroupe"
+                    }
+                  }
+                },
+                "codeInstrumentSousJacent": {
+                  "data": {
+                    "type": "sous_jacent",
+                    "id": "1371610e-a69b-48bc-9d35-1bf24f6577b1",
+                    "meta": {
+                      "drupal_internal__target_id": 22094323
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/codeInstrumentSousJacent"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/codeInstrumentSousJacent"
+                    }
+                  }
+                },
+                "codeContrat": {
+                  "data": {
+                    "type": "contrat",
+                    "id": "7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053",
+                    "meta": {
+                      "drupal_internal__target_id": 22094324
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/codeContrat"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/codeContrat"
+                    }
+                  }
+                },
+                "instrumentStatus": {
+                  "data": {
+                    "type": "status_instrument",
+                    "id": "819d2297-c908-4dda-8adf-15121ad8fa6b",
+                    "meta": {
+                      "drupal_internal__target_id": 55
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/instrumentStatus"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/instrumentStatus"
+                    }
+                  }
+                },
+                "mITCodeTypeInstrument": {
+                  "data": {
+                    "type": "type_instrument",
+                    "id": "234652ee-a784-45ce-bb82-10496db62e83",
+                    "meta": {
+                      "drupal_internal__target_id": 1084664
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/mITCodeTypeInstrument"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/mITCodeTypeInstrument"
+                    }
+                  }
+                },
+                "methodeReglement": {
+                  "data": {
+                    "type": "bourse_methodes",
+                    "id": "9a19a835-aace-40d2-ae52-b75d5d1c9c80",
+                    "meta": {
+                      "drupal_internal__target_id": 88
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/methodeReglement"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/methodeReglement"
+                    }
+                  }
+                },
+                "tradingCurrency": {
+                  "data": {
+                    "type": "devise_exchange",
+                    "id": "2cfc8b82-8415-488c-b0c4-2dfd886d8c11",
+                    "meta": {
+                      "drupal_internal__target_id": 21
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/tradingCurrency"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a7fea9bf-c35b-44cb-8d6a-0c273b4acbb2/relationships/tradingCurrency"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "instrument_derive",
+              "id": "a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9"
+                }
+              },
+              "attributes": {
+                "field_instrument_url": "/fr/live-market/instruments-derives/FMASI20JUI26",
+                "libelleAR": "MASI20 FUTURE JUI26",
+                "libelleEN": "MASI20 FUTURE JUI26",
+                "libelleFR": "MASI20 FUTURE JUI26",
+                "drupal_internal__id": 22094325,
+                "symbol": "FMASI20JUI26",
+                "published": true,
+                "is_flagged": null,
+                "has_alert": null,
+                "aonAuctionDuration": null,
+                "codeInstrumentBourse": 2102,
+                "codeISIN": "MA0009000037",
+                "contractMultiplier": "10.0000",
+                "dateExpiration": "2026-06-19T00:00:00+00:00",
+                "dateIntroduction": "2026-04-06T00:00:00+00:00",
+                "dateLastReprise": null,
+                "dateLastSuspension": null,
+                "dateRadiation": "2026-06-22T00:00:00+00:00",
+                "deletionDate": null,
+                "lastTradingDay": "2026-06-19T00:00:00+00:00",
+                "mitInstrumentID": "exch7183",
+                "moisEcheance": "juin",
+                "nombreTitres": null,
+                "radie": false,
+                "settlementDate": null
+              },
+              "relationships": {
+                "bourse_data_type": {
+                  "data": {
+                    "type": "bourse_data_type--bourse_data_type",
+                    "id": "f7ae3090-ed15-4697-8f47-6a071960e6e1",
+                    "meta": {
+                      "drupal_internal__target_id": "instrument_derive"
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/bourse_data_type"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/bourse_data_type"
+                    }
+                  }
+                },
+                "codeGroupe": {
+                  "data": {
+                    "type": "group_cotation",
+                    "id": "b37a1b94-6716-4b84-978e-2d9d6291e51e",
+                    "meta": {
+                      "drupal_internal__target_id": 1084671
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/codeGroupe"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/codeGroupe"
+                    }
+                  }
+                },
+                "codeInstrumentSousJacent": {
+                  "data": {
+                    "type": "sous_jacent",
+                    "id": "1371610e-a69b-48bc-9d35-1bf24f6577b1",
+                    "meta": {
+                      "drupal_internal__target_id": 22094323
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/codeInstrumentSousJacent"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/codeInstrumentSousJacent"
+                    }
+                  }
+                },
+                "codeContrat": {
+                  "data": {
+                    "type": "contrat",
+                    "id": "7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053",
+                    "meta": {
+                      "drupal_internal__target_id": 22094324
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/codeContrat"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/codeContrat"
+                    }
+                  }
+                },
+                "instrumentStatus": {
+                  "data": {
+                    "type": "status_instrument",
+                    "id": "819d2297-c908-4dda-8adf-15121ad8fa6b",
+                    "meta": {
+                      "drupal_internal__target_id": 55
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/instrumentStatus"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/instrumentStatus"
+                    }
+                  }
+                },
+                "mITCodeTypeInstrument": {
+                  "data": {
+                    "type": "type_instrument",
+                    "id": "234652ee-a784-45ce-bb82-10496db62e83",
+                    "meta": {
+                      "drupal_internal__target_id": 1084664
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/mITCodeTypeInstrument"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/mITCodeTypeInstrument"
+                    }
+                  }
+                },
+                "methodeReglement": {
+                  "data": {
+                    "type": "bourse_methodes",
+                    "id": "9a19a835-aace-40d2-ae52-b75d5d1c9c80",
+                    "meta": {
+                      "drupal_internal__target_id": 88
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/methodeReglement"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/methodeReglement"
+                    }
+                  }
+                },
+                "tradingCurrency": {
+                  "data": {
+                    "type": "devise_exchange",
+                    "id": "2cfc8b82-8415-488c-b0c4-2dfd886d8c11",
+                    "meta": {
+                      "drupal_internal__target_id": 21
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/tradingCurrency"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/a55f7fa3-d9e4-4c2e-9cd8-73e30b8ff3b9/relationships/tradingCurrency"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "instrument_derive",
+              "id": "160937d2-5423-490c-a17a-285c5734436d",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d"
+                }
+              },
+              "attributes": {
+                "drupal_internal__id": 22094328,
+                "symbol": "FMASI20MAR27",
+                "published": true,
+                "is_flagged": null,
+                "has_alert": null,
+                "aonAuctionDuration": null,
+                "codeInstrumentBourse": 2105,
+                "codeISIN": "MA0009000060",
+                "contractMultiplier": "10.0000",
+                "dateExpiration": "2027-03-19T00:00:00+00:00",
+                "dateIntroduction": "2026-04-06T00:00:00+00:00",
+                "dateLastReprise": null,
+                "dateLastSuspension": null,
+                "dateRadiation": "2027-03-22T00:00:00+00:00",
+                "deletionDate": null,
+                "field_instrument_url": "/fr/live-market/instruments-derives/FMASI20MAR27",
+                "lastTradingDay": "2027-03-19T00:00:00+00:00",
+                "libelleAR": "MASI20 FUTURE MAR27",
+                "libelleEN": "MASI20 FUTURE MAR27",
+                "libelleFR": "MASI20 FUTURE MAR27",
+                "mitInstrumentID": "exch7195",
+                "moisEcheance": "mars",
+                "nombreTitres": null,
+                "radie": false,
+                "settlementDate": null
+              },
+              "relationships": {
+                "bourse_data_type": {
+                  "data": {
+                    "type": "bourse_data_type--bourse_data_type",
+                    "id": "f7ae3090-ed15-4697-8f47-6a071960e6e1",
+                    "meta": {
+                      "drupal_internal__target_id": "instrument_derive"
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/bourse_data_type"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/bourse_data_type"
+                    }
+                  }
+                },
+                "codeGroupe": {
+                  "data": {
+                    "type": "group_cotation",
+                    "id": "b37a1b94-6716-4b84-978e-2d9d6291e51e",
+                    "meta": {
+                      "drupal_internal__target_id": 1084671
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/codeGroupe"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/codeGroupe"
+                    }
+                  }
+                },
+                "codeInstrumentSousJacent": {
+                  "data": {
+                    "type": "sous_jacent",
+                    "id": "1371610e-a69b-48bc-9d35-1bf24f6577b1",
+                    "meta": {
+                      "drupal_internal__target_id": 22094323
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/codeInstrumentSousJacent"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/codeInstrumentSousJacent"
+                    }
+                  }
+                },
+                "codeContrat": {
+                  "data": {
+                    "type": "contrat",
+                    "id": "7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053",
+                    "meta": {
+                      "drupal_internal__target_id": 22094324
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/codeContrat"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/codeContrat"
+                    }
+                  }
+                },
+                "instrumentStatus": {
+                  "data": {
+                    "type": "status_instrument",
+                    "id": "819d2297-c908-4dda-8adf-15121ad8fa6b",
+                    "meta": {
+                      "drupal_internal__target_id": 55
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/instrumentStatus"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/instrumentStatus"
+                    }
+                  }
+                },
+                "mITCodeTypeInstrument": {
+                  "data": {
+                    "type": "type_instrument",
+                    "id": "234652ee-a784-45ce-bb82-10496db62e83",
+                    "meta": {
+                      "drupal_internal__target_id": 1084664
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/mITCodeTypeInstrument"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/mITCodeTypeInstrument"
+                    }
+                  }
+                },
+                "methodeReglement": {
+                  "data": {
+                    "type": "bourse_methodes",
+                    "id": "9a19a835-aace-40d2-ae52-b75d5d1c9c80",
+                    "meta": {
+                      "drupal_internal__target_id": 88
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/methodeReglement"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/methodeReglement"
+                    }
+                  }
+                },
+                "tradingCurrency": {
+                  "data": {
+                    "type": "devise_exchange",
+                    "id": "2cfc8b82-8415-488c-b0c4-2dfd886d8c11",
+                    "meta": {
+                      "drupal_internal__target_id": 21
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/tradingCurrency"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/160937d2-5423-490c-a17a-285c5734436d/relationships/tradingCurrency"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "instrument_derive",
+              "id": "9af0be9b-8393-488a-b5e1-97a2a5e707c1",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1"
+                }
+              },
+              "attributes": {
+                "field_instrument_url": "/fr/live-market/instruments-derives/FMASI20SEP26",
+                "libelleAR": "MASI20 FUTURE SEP26",
+                "libelleEN": "MASI20 FUTURE SEP26",
+                "libelleFR": "MASI20 FUTURE SEP26",
+                "symbol": "FMASI20SEP26",
+                "drupal_internal__id": 22094326,
+                "published": true,
+                "is_flagged": null,
+                "has_alert": null,
+                "aonAuctionDuration": null,
+                "codeInstrumentBourse": 2103,
+                "codeISIN": "MA0009000045",
+                "contractMultiplier": "10.0000",
+                "dateExpiration": "2026-09-18T00:00:00+00:00",
+                "dateIntroduction": "2026-04-06T00:00:00+00:00",
+                "dateLastReprise": null,
+                "dateLastSuspension": null,
+                "dateRadiation": "2026-09-21T00:00:00+00:00",
+                "deletionDate": null,
+                "lastTradingDay": "2026-09-18T00:00:00+00:00",
+                "mitInstrumentID": "exch7185",
+                "moisEcheance": "septembre",
+                "nombreTitres": null,
+                "radie": false,
+                "settlementDate": null
+              },
+              "relationships": {
+                "bourse_data_type": {
+                  "data": {
+                    "type": "bourse_data_type--bourse_data_type",
+                    "id": "f7ae3090-ed15-4697-8f47-6a071960e6e1",
+                    "meta": {
+                      "drupal_internal__target_id": "instrument_derive"
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/bourse_data_type"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/bourse_data_type"
+                    }
+                  }
+                },
+                "codeGroupe": {
+                  "data": {
+                    "type": "group_cotation",
+                    "id": "b37a1b94-6716-4b84-978e-2d9d6291e51e",
+                    "meta": {
+                      "drupal_internal__target_id": 1084671
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/codeGroupe"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/codeGroupe"
+                    }
+                  }
+                },
+                "codeInstrumentSousJacent": {
+                  "data": {
+                    "type": "sous_jacent",
+                    "id": "1371610e-a69b-48bc-9d35-1bf24f6577b1",
+                    "meta": {
+                      "drupal_internal__target_id": 22094323
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/codeInstrumentSousJacent"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/codeInstrumentSousJacent"
+                    }
+                  }
+                },
+                "codeContrat": {
+                  "data": {
+                    "type": "contrat",
+                    "id": "7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053",
+                    "meta": {
+                      "drupal_internal__target_id": 22094324
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/codeContrat"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/codeContrat"
+                    }
+                  }
+                },
+                "instrumentStatus": {
+                  "data": {
+                    "type": "status_instrument",
+                    "id": "819d2297-c908-4dda-8adf-15121ad8fa6b",
+                    "meta": {
+                      "drupal_internal__target_id": 55
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/instrumentStatus"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/instrumentStatus"
+                    }
+                  }
+                },
+                "mITCodeTypeInstrument": {
+                  "data": {
+                    "type": "type_instrument",
+                    "id": "234652ee-a784-45ce-bb82-10496db62e83",
+                    "meta": {
+                      "drupal_internal__target_id": 1084664
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/mITCodeTypeInstrument"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/mITCodeTypeInstrument"
+                    }
+                  }
+                },
+                "methodeReglement": {
+                  "data": {
+                    "type": "bourse_methodes",
+                    "id": "9a19a835-aace-40d2-ae52-b75d5d1c9c80",
+                    "meta": {
+                      "drupal_internal__target_id": 88
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/methodeReglement"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/methodeReglement"
+                    }
+                  }
+                },
+                "tradingCurrency": {
+                  "data": {
+                    "type": "devise_exchange",
+                    "id": "2cfc8b82-8415-488c-b0c4-2dfd886d8c11",
+                    "meta": {
+                      "drupal_internal__target_id": 21
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/tradingCurrency"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive/9af0be9b-8393-488a-b5e1-97a2a5e707c1/relationships/tradingCurrency"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "included": [
+            {
+              "type": "contrat",
+              "id": "7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053"
+                }
+              },
+              "attributes": {
+                "drupal_internal__id": 22094324,
+                "code": "1101",
+                "published": true,
+                "is_flagged": null,
+                "has_alert": null,
+                "metatag": null,
+                "internal_user": null,
+                "codeContrat": 1101,
+                "codeIndexCash": "MSI20",
+                "dateRadiation": null,
+                "primeRisque": null,
+                "dateCotation": "2025-09-11T00:00:00+00:00",
+                "dateReglementFinal": null,
+                "dateSuspension": null,
+                "dernierJourCotation": null,
+                "dividendYield": true,
+                "initialMarginDeposit": 1500,
+                "libelle": "MASI20 FUTURE",
+                "maturite": "0.0000000000",
+                "motifSuspension": null,
+                "nombreStrike": 0,
+                "prixReglementFinal": "0.0000000000",
+                "radier": false,
+                "referenceAccordAmmc": " VI/MAT/01/2025",
+                "refferenceAccordEmetteur": "-",
+                "repriseCotation": null,
+                "seriesEcheance": null,
+                "taux": "0.0000000000",
+                "uniteNegociation": "10"
+              },
+              "relationships": {
+                "bourse_data_type": {
+                  "data": {
+                    "type": "bourse_data_type--bourse_data_type",
+                    "id": "9937615e-fdb0-4a9f-a776-193446cb394e",
+                    "meta": {
+                      "drupal_internal__target_id": "contrat"
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/bourse_data_type"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/relationships/bourse_data_type"
+                    }
+                  }
+                },
+                "codeInstrumentSousJacent": {
+                  "data": {
+                    "type": "sous_jacent",
+                    "id": "1371610e-a69b-48bc-9d35-1bf24f6577b1",
+                    "meta": {
+                      "drupal_internal__target_id": 22094323
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/codeInstrumentSousJacent"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/relationships/codeInstrumentSousJacent"
+                    }
+                  }
+                },
+                "mitCodeTypeInstrument": {
+                  "data": {
+                    "type": "type_instrument",
+                    "id": "05478d58-78e2-45b0-8498-2477271057fb",
+                    "meta": {
+                      "drupal_internal__target_id": 1084665
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/mitCodeTypeInstrument"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/relationships/mitCodeTypeInstrument"
+                    }
+                  }
+                },
+                "methodeReglement": {
+                  "data": {
+                    "type": "bourse_methodes",
+                    "id": "9a19a835-aace-40d2-ae52-b75d5d1c9c80",
+                    "meta": {
+                      "drupal_internal__target_id": 88
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/methodeReglement"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/relationships/methodeReglement"
+                    }
+                  }
+                },
+                "idStatutContrat": {
+                  "data": {
+                    "type": "status_contrat",
+                    "id": "0ff309ae-cab0-4cf8-a5d4-91cef813efc4",
+                    "meta": {
+                      "drupal_internal__target_id": 1084666
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/idStatutContrat"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/relationships/idStatutContrat"
+                    }
+                  }
+                },
+                "codeDevise": {
+                  "data": {
+                    "type": "devise_exchange",
+                    "id": "2cfc8b82-8415-488c-b0c4-2dfd886d8c11",
+                    "meta": {
+                      "drupal_internal__target_id": 21
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/codeDevise"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/relationships/codeDevise"
+                    }
+                  }
+                },
+                "idTypeContrat": {
+                  "data": {
+                    "type": "type_contrat",
+                    "id": "90043b04-49bf-42cb-bb6f-552a6b69fc50",
+                    "meta": {
+                      "drupal_internal__target_id": 1084669
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/idTypeContrat"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/contrat/7ac29080-2aeb-4d0a-8e1c-dd2b1f67c053/relationships/idTypeContrat"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "bourse_methodes",
+              "id": "9a19a835-aace-40d2-ae52-b75d5d1c9c80",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/bourse_methodes/9a19a835-aace-40d2-ae52-b75d5d1c9c80?resourceVersion=id%3A88"
+                }
+              },
+              "attributes": {
+                "drupal_internal__tid": 88,
+                "langcode": "fr",
+                "status": true,
+                "name": "Cash",
+                "weight": 0,
+                "legacy_id": null,
+                "term_id": null,
+                "slug": "88",
+                "term_2_slug": "cash",
+                "field_code": "Cash"
+              },
+              "relationships": {
+                "vid": {
+                  "data": null,
+                  "links": {
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/bourse_methodes/9a19a835-aace-40d2-ae52-b75d5d1c9c80/relationships/vid?resourceVersion=id%3A88"
+                    }
+                  }
+                },
+                "results_count": {
+                  "data": [],
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/bourse_methodes/9a19a835-aace-40d2-ae52-b75d5d1c9c80/results_count?resourceVersion=id%3A88"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/bourse_methodes/9a19a835-aace-40d2-ae52-b75d5d1c9c80/relationships/results_count?resourceVersion=id%3A88"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "sous_jacent",
+              "id": "1371610e-a69b-48bc-9d35-1bf24f6577b1",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/sous_jacent/1371610e-a69b-48bc-9d35-1bf24f6577b1"
+                }
+              },
+              "attributes": {
+                "drupal_internal__id": 22094323,
+                "symbol": "MSI20",
+                "published": true,
+                "is_flagged": null,
+                "has_alert": null,
+                "metatag": null,
+                "internal_user": null,
+                "codeInstrumentBourse": 1001,
+                "codeISIN": null,
+                "libelleAR": null,
+                "libelleEN": null,
+                "libelleFR": "MASI20",
+                "nombreTitres": null,
+                "referencePrice": "1594.41"
+              },
+              "relationships": {
+                "bourse_data_type": {
+                  "data": {
+                    "type": "bourse_data_type--bourse_data_type",
+                    "id": "f250a09d-8115-48c7-a3d5-4a0c04ddc49b",
+                    "meta": {
+                      "drupal_internal__target_id": "sous_jacent"
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/sous_jacent/1371610e-a69b-48bc-9d35-1bf24f6577b1/bourse_data_type"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/sous_jacent/1371610e-a69b-48bc-9d35-1bf24f6577b1/relationships/bourse_data_type"
+                    }
+                  }
+                },
+                "mITCodeTypeInstrument": {
+                  "data": {
+                    "type": "type_instrument",
+                    "id": "05478d58-78e2-45b0-8498-2477271057fb",
+                    "meta": {
+                      "drupal_internal__target_id": 1084665
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/sous_jacent/1371610e-a69b-48bc-9d35-1bf24f6577b1/mITCodeTypeInstrument"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/sous_jacent/1371610e-a69b-48bc-9d35-1bf24f6577b1/relationships/mITCodeTypeInstrument"
+                    }
+                  }
+                },
+                "tradingCurrency": {
+                  "data": {
+                    "type": "devise_exchange",
+                    "id": "2cfc8b82-8415-488c-b0c4-2dfd886d8c11",
+                    "meta": {
+                      "drupal_internal__target_id": 21
+                    }
+                  },
+                  "links": {
+                    "related": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/sous_jacent/1371610e-a69b-48bc-9d35-1bf24f6577b1/tradingCurrency"
+                    },
+                    "self": {
+                      "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/sous_jacent/1371610e-a69b-48bc-9d35-1bf24f6577b1/relationships/tradingCurrency"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "type_instrument",
+              "id": "05478d58-78e2-45b0-8498-2477271057fb",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/type_instrument/05478d58-78e2-45b0-8498-2477271057fb?resourceVersion=id%3A1084665"
+                }
+              },
+              "attributes": {
+                "name": "INDX",
+                "field_code": "108"
+              }
+            },
+            {
+              "type": "devise_exchange",
+              "id": "2cfc8b82-8415-488c-b0c4-2dfd886d8c11",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/devise_exchange/2cfc8b82-8415-488c-b0c4-2dfd886d8c11?resourceVersion=id%3A21"
+                }
+              },
+              "attributes": {
+                "name": "Dirham marocain"
+              }
+            },
+            {
+              "type": "group_cotation",
+              "id": "b37a1b94-6716-4b84-978e-2d9d6291e51e",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/bourse_groupes/b37a1b94-6716-4b84-978e-2d9d6291e51e?resourceVersion=id%3A1084671"
+                }
+              },
+              "attributes": {
+                "name": "GROUPE 21"
+              }
+            },
+            {
+              "type": "status_instrument",
+              "id": "819d2297-c908-4dda-8adf-15121ad8fa6b",
+              "links": {
+                "self": {
+                  "href": "https://api.casablanca-bourse.com/fr/api/taxonomy_term/status_instrument/819d2297-c908-4dda-8adf-15121ad8fa6b?resourceVersion=id%3A55"
+                }
+              },
+              "attributes": {
+                "name": "Active"
+              }
+            }
+          ],
+          "meta": {
+            "count": 4
+          },
+          "links": {
+            "self": {
+              "href": "https://api.casablanca-bourse.com/fr/api/bourse_data/instrument_derive?fields%5Bdevise_exchange%5D=name&fields%5Bgroup_cotation%5D=name&fields%5Btaxonomy_term--bourse_methodes%5D=name&fields%5Bstatus_instrument%5D=name&fields%5Btype_instrument%5D=name%2Cfield_code&filter%5Bradie%5D=0&include=codeContrat%2CcodeInstrumentSousJacent%2CcodeInstrumentSousJacent.mITCodeTypeInstrument%2CtradingCurrency%2CcodeGroupe%2CmethodeReglement%2CinstrumentStatus%2CcodeContrat.methodeReglement&page%5Boffset%5D=0&page%5Blimit%5D=20&q%5Bentity_bundle%5D=vactory_page&q%5Bentity_id%5D=94751&sort%5Bsymbol%5D%5Bpath%5D=symbol&sort%5Bsymbol%5D%5Bdirection%5D=ASC"
+            }
+          }
+        },
+        "filters": {
+          "fields": {
+            "devise_exchange": "name",
+            "group_cotation": "name",
+            "taxonomy_term--bourse_methodes": "name",
+            "status_instrument": "name",
+            "type_instrument": "name,field_code"
+          },
+          "include": "codeContrat,codeInstrumentSousJacent,codeInstrumentSousJacent.mITCodeTypeInstrument,tradingCurrency,codeGroupe,methodeReglement,instrumentStatus,codeContrat.methodeReglement",
+          "filter": {
+            "radie": "0"
+          },
+          "sort": {
+            "symbol": {
+              "path": "symbol",
+              "direction": "ASC"
+            }
+          },
+          "page": {
+            "offset": "0",
+            "limit": "20"
+          }
+        },
+        "original_filters": {
+          "fields": {
+            "devise_exchange": "name",
+            "group_cotation": "name",
+            "taxonomy_term--bourse_methodes": "name",
+            "status_instrument": "name",
+            "type_instrument": "name,field_code"
+          },
+          "include": "codeContrat,codeInstrumentSousJacent,codeInstrumentSousJacent.mITCodeTypeInstrument,tradingCurrency,codeGroupe,methodeReglement,instrumentStatus,codeContrat.methodeReglement",
+          "filter": {
+            "radie": "0"
+          },
+          "sort": {
+            "symbol": {
+              "path": "symbol",
+              "direction": "ASC"
+            }
+          },
+          "page": {
+            "offset": "0",
+            "limit": "20"
+          }
+        },
+        "taxonomies": [],
+        "optional_data": []
+      },
+      "_weight": 1
+    }
+  ],
+  "template": "bourse_data_listing:derive-instrument-listing"
+}

@@ -48,6 +48,41 @@ Site Bourse de Casablanca
 
 ---
 
+## Vue globale du pipeline
+
+À la fin du projet, voici ce qui se passera chaque jour :
+08:00 ou 18:00 (heure programmée)
+
+       Prefect
+          │
+          ▼
+     scraper.py
+          │
+          ▼
+
+Récupération des cotations
+│
+▼
+Validation / Nettoyage
+│
+▼
+Insertion Cassandra
+│
+▼
+Historisation
+│
+▼
+Trino
+│
+▼
+Requêtes SQL
+│
+▼
+Metabase
+│
+▼
+Dashboard
+
 ## 📁 Structure du Projet
 
 ```
@@ -98,6 +133,7 @@ casablanca-bourse-bigdata/
 ```bash
 git clone https://github.com/kikjabouza/casablanca-bourse-bigdata.git
 cd casablanca-bourse-bigdata
+git checkout branch YOUR_BRANCH_NAME  # Khadija : khadija, Joyce : joyce, Riad : riad
 ```
 
 ### 2. Installer les dépendances Python

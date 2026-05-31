@@ -1,0 +1,10 @@
+{
+  "auto_populate": false,
+  "components": [
+    {
+      "collection": "512335",
+      "_weight": 1
+    }
+  ],
+  "template": "bourse_data_listing:index-cotation"
+}
