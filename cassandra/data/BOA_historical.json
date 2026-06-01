@@ -1,0 +1,35 @@
+[
+  {
+    "ticker": "BOA",
+    "date": "2026-04-01",
+    "close_price": 395.0,
+    "open_price": 380.0,
+    "high_price": 400.0,
+    "low_price": 375.0,
+    "volume": 12000000.0,
+    "current_price": 395.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "BOA",
+    "date": "2026-05-01",
+    "close_price": 430.0,
+    "open_price": 420.0,
+    "high_price": 435.0,
+    "low_price": 415.0,
+    "volume": 14000000.0,
+    "current_price": 430.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "BOA",
+    "date": "2026-06-01",
+    "close_price": 455.0,
+    "open_price": 450.0,
+    "high_price": 460.0,
+    "low_price": 445.0,
+    "volume": 15000000.0,
+    "current_price": 455.0,
+    "ratio": 1.0
+  }
+]

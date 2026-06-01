@@ -1,0 +1,35 @@
+[
+  {
+    "ticker": "ATW",
+    "date": "2026-04-01",
+    "close_price": 595.0,
+    "open_price": 580.0,
+    "high_price": 600.0,
+    "low_price": 575.0,
+    "volume": 20000000.0,
+    "current_price": 595.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "ATW",
+    "date": "2026-05-01",
+    "close_price": 665.0,
+    "open_price": 650.0,
+    "high_price": 670.0,
+    "low_price": 645.0,
+    "volume": 22000000.0,
+    "current_price": 665.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "ATW",
+    "date": "2026-06-01",
+    "close_price": 698.0,
+    "open_price": 690.0,
+    "high_price": 705.0,
+    "low_price": 685.0,
+    "volume": 25000000.0,
+    "current_price": 698.0,
+    "ratio": 1.0
+  }
+]

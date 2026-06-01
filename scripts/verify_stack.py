@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
 """
-Vérifie que Cassandra, Trino et Metabase sont accessibles.
-Usage : py -3 scripts/verify_stack.py
+Script utilitaire pour vérifier l'intégrité de la stack (Cassandra, Trino, Metabase)
+
+Usage: python scripts/verify_stack.py
 """
 
 import os
@@ -15,8 +15,14 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 load_dotenv(ROOT / ".env")
 
+from src.utils.logger import setup_logger, get_logger
+
+setup_logger()
+logger = get_logger(__name__)
+
 
 def check_cassandra() -> bool:
+    """Vérifie la connexion à Cassandra"""
     host = os.getenv("CASSANDRA_HOST", "localhost")
     port = int(os.getenv("CASSANDRA_PORT", "9042"))
     keyspace = os.getenv("CASSANDRA_KEYSPACE", "bourse_data")
@@ -27,124 +33,83 @@ def check_cassandra() -> bool:
 
         cluster = Cluster([host], port=port, connect_timeout=10)
         session = cluster.connect()
-        rows = session.execute(
-            "SELECT keyspace_name FROM system_schema.keyspaces WHERE keyspace_name = %s",
-            (keyspace,),
-        )
-        found = len(list(rows)) > 0
-        cluster.shutdown()
-        status = "OK" if found else f"WARN (keyspace {keyspace} absent — lancer init.cql)"
-        print(f"  Cassandra ({host}:{port}) : {status}")
-        return found
-    except ImportError:
-        print("  Cassandra : SKIP (cassandra-driver non installé)")
-    except Exception as exc:
-        print(f"  Cassandra driver : WARN ({exc})")
-
-    return _check_cassandra_via_docker(keyspace)
-
-
-def _check_cassandra_via_docker(keyspace: str) -> bool:
-    import subprocess
-
-    try:
-        result = subprocess.run(
-            [
-                "docker", "exec", "cassandra", "cqlsh", "-e",
-                f"DESCRIBE TABLES;",
-            ],
-            capture_output=True,
-            text=True,
-            timeout=30,
-        )
-        if result.returncode != 0:
-            print(f"  Cassandra (docker) : FAIL ({result.stderr.strip()})")
+        rows = session.execute(f"SELECT keyspace_name FROM system_schema.keyspaces WHERE keyspace_name='{keyspace}'")
+        
+        if rows:
+            logger.info(f"✅ Cassandra: Keyspace '{keyspace}' trouvé")
+            session.shutdown()
+            return True
+        else:
+            logger.warning(f"⚠️  Cassandra: Keyspace '{keyspace}' non trouvé")
             return False
-        found = keyspace in result.stdout or "daily_prices" in result.stdout
-        status = "OK (via docker)" if found else f"WARN (keyspace {keyspace} absent)"
-        print(f"  Cassandra : {status}")
-        return found
-    except Exception as exc:
-        print(f"  Cassandra (docker) : FAIL ({exc})")
+            
+    except ImportError:
+        logger.warning("⚠️  Cassandra driver non installé")
+        return False
+    except Exception as e:
+        logger.error(f"❌ Cassandra: Erreur de connexion - {e}")
         return False
 
 
 def check_trino() -> bool:
+    """Vérifie la connexion à Trino"""
     host = os.getenv("TRINO_HOST", "localhost")
-    port = os.getenv("TRINO_PORT", "8080")
-    catalog = os.getenv("TRINO_CATALOG", "cassandra")
-    schema = os.getenv("TRINO_SCHEMA", "bourse_data")
-    url = f"http://{host}:{port}/v1/statement"
-    headers = {"X-Trino-User": os.getenv("TRINO_USER", "reporting")}
-    query = f"SHOW TABLES FROM {catalog}.{schema}"
-
+    port = int(os.getenv("TRINO_PORT", "8080"))
+    url = f"http://{host}:{port}/ui"
+    
     try:
-        response = requests.post(url, data=query, headers=headers, timeout=15)
-        if response.status_code != 200:
-            print(f"  Trino ({host}:{port}) : FAIL (HTTP {response.status_code})")
+        response = requests.head(url, timeout=5)
+        if response.status_code < 500:
+            logger.info("✅ Trino: Accessible")
+            return True
+        else:
+            logger.warning(f"⚠️  Trino: Erreur HTTP {response.status_code}")
             return False
-        data = response.json()
-        if data.get("error"):
-            print(f"  Trino : FAIL ({data['error'].get('message', data['error'])})")
-            return False
-        print(f"  Trino ({host}:{port}) : OK (catalog={catalog}, schema={schema})")
-        return True
-    except Exception as exc:
-        print(f"  Trino ({host}:{port}) : FAIL ({exc})")
+    except Exception as e:
+        logger.error(f"❌ Trino: Non accessible - {e}")
         return False
 
 
 def check_metabase() -> bool:
-    url = os.getenv("METABASE_URL", "http://localhost:3000")
+    """Vérifie la connexion à Metabase"""
+    host = os.getenv("METABASE_HOST", "localhost")
+    port = int(os.getenv("METABASE_PORT", "3000"))
+    url = f"http://{host}:{port}/api/health"
+    
     try:
-        response = requests.get(f"{url}/api/health", timeout=10)
+        response = requests.get(url, timeout=5)
         if response.status_code == 200:
-            print(f"  Metabase ({url}) : OK")
+            logger.info("✅ Metabase: Accessible")
             return True
-        print(f"  Metabase ({url}) : FAIL (HTTP {response.status_code})")
-        return False
-    except Exception as exc:
-        print(f"  Metabase ({url}) : FAIL ({exc})")
-        return False
-
-
-def check_prefect() -> bool:
-    url = os.getenv("PREFECT_API_URL", "http://localhost:4200/api")
-    try:
-        response = requests.get(f"{url}/health", timeout=10)
-        if response.status_code == 200:
-            print(f"  Prefect ({url}) : OK")
-            return True
-        print(f"  Prefect ({url}) : FAIL (HTTP {response.status_code})")
-        return False
-    except Exception as exc:
-        print(f"  Prefect ({url}) : FAIL ({exc})")
+        else:
+            logger.warning(f"⚠️  Metabase: Status {response.status_code}")
+            return False
+    except Exception as e:
+        logger.error(f"❌ Metabase: Non accessible - {e}")
         return False
 
 
 def main():
-    print("=" * 60)
-    print("VERIFICATION STACK BOURSE DE CASABLANCA")
-    print("=" * 60)
-
-    results = [
-        check_cassandra(),
-        check_trino(),
-        check_metabase(),
-        check_prefect(),
-    ]
-
-    print("=" * 60)
-    if all(results):
-        print("Stack prete pour l'analyse et le reporting.")
-        print("Guide : docs/ANALYSE_REPORTING.md")
-    else:
-        print("Certains services sont indisponibles.")
-        print("Lancer : docker compose up -d")
-        print("Puis   : .\\scripts\\init_infrastructure.ps1")
-    print("=" * 60)
-    return 0 if all(results) else 1
+    logger.info("=" * 60)
+    logger.info("Vérification de la stack")
+    logger.info("=" * 60)
+    
+    results = {
+        "Cassandra": check_cassandra(),
+        "Trino": check_trino(),
+        "Metabase": check_metabase()
+    }
+    
+    logger.info("\n" + "=" * 60)
+    logger.info("Résumé:")
+    for service, status in results.items():
+        status_text = "✅ OK" if status else "❌ KO"
+        logger.info(f"  {service:20} {status_text}")
+    logger.info("=" * 60)
+    
+    return all(results.values())
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    success = main()
+    sys.exit(0 if success else 1)

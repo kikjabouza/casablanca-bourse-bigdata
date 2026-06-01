@@ -54,41 +54,60 @@ class InstrumentsListScraper:
     
     def _scrape_from_api(self) -> List[Dict[str, str]]:
         """
-        Tente de récupérer la liste via l'API JSON
+        Tente de récupérer la liste via l'API JSON paginée
         """
         try:
-            # URL de l'API pour la liste des instruments
-            api_url = "https://www.casablanca-bourse.com/api/proxy/fr/api/bourse_data/instrument_list"
-            
-            response = requests.get(
-                api_url,
-                headers=self.config.HEADERS,
-                timeout=30,
-                verify=False
-            )
-            
-            if response.status_code != 200:
-                return []
-            
-            data = response.json()
-            instruments = []
-            
-            # Parser la réponse JSON
-            if 'data' in data:
-                for item in data['data']:
-                    attributes = item.get('attributes', {})
-                    ticker = attributes.get('field_code', '')
-                    name = attributes.get('field_name', '')
-                    
-                    if ticker:
-                        instruments.append({
-                            'ticker': ticker,
-                            'name': name or ticker,
-                            'url': f'/fr/live-market/instruments/{ticker}'
-                        })
-            
+            instruments_map = {}
+            offset = 0
+            limit = 250
+            total_count = None
+
+            while True:
+                api_url = self.config.get_instruments_api_url(offset=offset, limit=limit)
+                response = requests.get(
+                    api_url,
+                    headers=self.config.API_HEADERS,
+                    timeout=30,
+                    verify=False
+                )
+
+                if response.status_code != 200:
+                    logger.debug(f"Instrument API status {response.status_code} pour {api_url}")
+                    break
+
+                data = response.json()
+                page_items = data.get('data', [])
+                if total_count is None:
+                    total_count = data.get('meta', {}).get('count', len(page_items))
+
+                for item in page_items:
+                    attributes = item.get('attributes', {}) or {}
+                    ticker = attributes.get('symbol') or attributes.get('codeInstrumentBourse', '')
+                    if not ticker:
+                        continue
+
+                    name = (
+                        attributes.get('libelleFR') or
+                        attributes.get('libelleEN') or
+                        attributes.get('libelleAR') or
+                        ticker
+                    )
+
+                    url = attributes.get('instrument_url') or f'/fr/live-market/instruments/{ticker}'
+                    instruments_map[ticker] = {
+                        'ticker': ticker,
+                        'name': name,
+                        'url': url
+                    }
+
+                if not page_items or total_count is None or offset + limit >= total_count:
+                    break
+
+                offset += limit
+
+            instruments = list(instruments_map.values())
             return instruments
-            
+
         except Exception as e:
             logger.debug(f"API scraping échoué: {e}")
             return []

@@ -1,0 +1,52 @@
+[
+  {
+    "ticker": "MNG",
+    "name": "MANAGEM",
+    "url": "/fr/live-market/instruments/MNG"
+  },
+  {
+    "ticker": "BOA",
+    "name": "BANK OF AFRICA",
+    "url": "/fr/live-market/instruments/BOA"
+  },
+  {
+    "ticker": "ATW",
+    "name": "ATTIJARIWAFA BANK",
+    "url": "/fr/live-market/instruments/ATW"
+  },
+  {
+    "ticker": "BCP",
+    "name": "BCP",
+    "url": "/fr/live-market/instruments/BCP"
+  },
+  {
+    "ticker": "IAM",
+    "name": "IAM",
+    "url": "/fr/live-market/instruments/IAM"
+  },
+  {
+    "ticker": "OCP",
+    "name": "OCP GROUP",
+    "url": "/fr/live-market/instruments/OCP"
+  },
+  {
+    "ticker": "MSA",
+    "name": "SODEP-Marsa Maroc",
+    "url": "/fr/live-market/instruments/MSA"
+  },
+  {
+    "ticker": "LBV",
+    "name": "LABEL VIE",
+    "url": "/fr/live-market/instruments/LBV"
+  },
+  {
+    "ticker": "ADI",
+    "name": "ALLIANCES",
+    "url": "/fr/live-market/instruments/ADI"
+  },
+  {
+    "ticker": "SID",
+    "name": "SONASID",
+    "url": "/fr/live-market/instruments/SID"
+  }
+]

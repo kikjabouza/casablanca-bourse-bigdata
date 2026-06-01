@@ -1,0 +1,111 @@
+{
+  "scraped_at": "2026-06-01T19:44:26.438940",
+  "date": "2026-06-01",
+  "indices": {
+    "MASI": {
+      "value": 19048.6726,
+      "variation": 0.0,
+      "annual_variation": 0.0
+    },
+    "MASI20": {
+      "value": 18985.9703,
+      "variation": 0.0,
+      "annual_variation": 0.0
+    },
+    "MASI_ESG": {
+      "value": 18985.9703,
+      "variation": 0.0,
+      "annual_variation": 0.0
+    }
+  },
+  "market_stats": {
+    "global_volume": 360500768.0,
+    "market_cap": 1105581666713.0
+  },
+  "futures": [
+    {
+      "name": "MASI20 FUTURE JUI26",
+      "value": 1358.3,
+      "variation": 0.0
+    },
+    {
+      "name": "MASI20 FUTURE SEP26",
+      "value": 1356.4,
+      "variation": 0.0
+    }
+  ],
+  "top_gainers": [
+    {
+      "ticker": "MNG",
+      "name": "MANAGEM",
+      "price": 18098.0,
+      "difference": 693.0,
+      "variation": 3.98
+    },
+    {
+      "ticker": "ATW",
+      "name": "ATTIJARIWAFA BANK",
+      "price": 698.0,
+      "difference": 14.5,
+      "variation": 2.1
+    },
+    {
+      "ticker": "BCP",
+      "name": "BCP",
+      "price": 236.0,
+      "difference": 8.0,
+      "variation": 3.5
+    },
+    {
+      "ticker": "MSA",
+      "name": "SODEP-Marsa Maroc",
+      "price": 1270.0,
+      "difference": 34.5,
+      "variation": 2.8
+    },
+    {
+      "ticker": "BOA",
+      "name": "BANK OF AFRICA",
+      "price": 455.0,
+      "difference": 6.5,
+      "variation": 1.5
+    }
+  ],
+  "top_losers": [
+    {
+      "ticker": "IAM",
+      "name": "IAM",
+      "price": 8.7,
+      "difference": -0.22,
+      "variation": -2.5
+    },
+    {
+      "ticker": "LBV",
+      "name": "LABEL VIE",
+      "price": 850.0,
+      "difference": -15.6,
+      "variation": -1.8
+    },
+    {
+      "ticker": "ADI",
+      "name": "ALLIANCES",
+      "price": 389.0,
+      "difference": -4.7,
+      "variation": -1.2
+    },
+    {
+      "ticker": "SID",
+      "name": "SONASID",
+      "price": 450.0,
+      "difference": -4.1,
+      "variation": -0.9
+    },
+    {
+      "ticker": "OCP",
+      "name": "OCP GROUP",
+      "price": 1200.0,
+      "difference": -6.0,
+      "variation": -0.5
+    }
+  ]
+}

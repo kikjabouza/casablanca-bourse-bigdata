@@ -1,52 +1,153 @@
 # 📈 Bourse de Casablanca — Pipeline Big Data
 
 > Projet académique — Module Big Data  
-> Scraping quotidien des cotations boursières, orchestration, stockage distribué et reporting financier.
-> Bourse de Casablanca
-> Scraping quotidien des cotations de la Bourse de Casablanca avec BeautifulSoup.
-> Orchestration Prefect, stockage haute disponibilité dans Cassandra, requêtage SQL fédéré avec Trino sur Cassandra, et reporting financier (volumes, performances sectorielles) sur Metabase.
-> Technologies :
+> Scraping quotidien des cotations boursières, stockage distribué dans Cassandra, requêtage avec Trino et dashboards Metabase.
 
-## Web scraping → Prefect → Cassandra → Trino → Metabase
-
-## 👥 Équipe & Responsabilités
-
-| Membre      | Rôle                                      | Dossier/Fichiers                                       |
-| ----------- | ----------------------------------------- | ------------------------------------------------------ |
-| **Khadija** | Scraping & Validation des données         | `src/scraper.py`, `src/validator.py`, `tests/`         |
-| **Joyce**   | Infrastructure Docker, Cassandra, Prefect | `docker-compose.yml`, `flows/`, `cassandra/`, `trino/` |
-| **Riad**    | Requêtes SQL & Dashboards Metabase        | `sql/queries.sql`, dashboard Metabase                  |
-
----
-
-## 🏗️ Architecture du Pipeline
+## Architecture du Pipeline
 
 ```
-Site Bourse de Casablanca
+🌐 Site Bourse de Casablanca
         │
         ▼
-  [Scraper Python]        ← Khadija  (BeautifulSoup + Pydantic)
-  src/scraper.py
+📊 [Scraping Python]
+   src/main.py (BeautifulSoup + Pydantic)
+   • Instruments (liste complète)
+   • Détails statiques (secteur, ISIN, etc.)
+   • Données historiques (OHLC)
+   • Market overview (indices, top movers)
         │
         ▼
-  [Prefect Flow]          ← Joyce    (Orchestration + scheduling 18h/jour)
-  flows/daily_scrape.py
+💾 [Tests Unitaires] - Mode JSON (indépendant de Cassandra)
+   tests/test_all_scrapers.py
         │
         ▼
-  [Cassandra]             ← Joyce    (Stockage haute disponibilité)
-  keyspace: bourse
-  table: cotations
+🗄️ [Cassandra] - Stockage haute disponibilité
+   cassandra/data/ → cassandra/init.cql
+   • instruments_static
+   • instruments_prices
+   • market_stats
         │
         ▼
-  [Trino]                 ← Riad     (Moteur SQL fédéré sur Cassandra)
-  sql/queries.sql
+🔍 [Trino] - Moteur SQL fédéré sur Cassandra
+   sql/queries.sql
         │
         ▼
-  [Metabase]              ← Riad     (Dashboard de reporting financier)
-  http://localhost:3000
+📈 [Metabase] - Dashboards de reporting
+   http://localhost:3000
 ```
 
 ---
+
+## 🚀 Démarrage rapide
+
+### 1. Scraping complet
+
+```bash
+python -m src.main
+```
+
+Scrape TOUTES les données (instruments, détails, historique, market overview)
+
+### 2. Tester les scrapers
+
+```bash
+python tests/test_all_scrapers.py
+```
+
+Lance les 4 tests unitaires (indépendants de Cassandra)
+
+### 3. Vérifier la stack
+
+```bash
+python scripts/verify_stack.py
+```
+
+Vérifie Cassandra, Trino, Metabase
+
+### 4. Mise à jour quotidienne
+
+```bash
+python -m src.main --daily
+```
+
+### 5. Market overview uniquement
+
+```bash
+python -m src.main --overview
+```
+
+---
+
+## 📁 Structure du projet
+
+```
+casablanca-bourse-bigdata/
+├── src/
+│   ├── main.py              ← Orchestrateur principal
+│   ├── scrapers/
+│   │   ├── instruments_list_scraper.py
+│   │   ├── instrument_details_scraper.py
+│   │   ├── historical_data_scraper.py
+│   │   └── market_overview_scraper.py
+│   ├── storage/
+│   │   ├── cassandra_client.py  (modes test/production)
+│   │   ├── data_validator.py
+│   │   └── models.py
+│   └── utils/
+│       ├── config.py
+│       ├── logger.py
+│       └── helpers.py
+│
+├── tests/
+│   ├── test_all_scrapers.py  ← Test global
+│   ├── test_03_instruments_list_v2.py
+│   ├── test_04_instrument_details.py
+│   ├── test_02_historical_data.py
+│   ├── test_08_market_overview_complete.py
+│   └── data/                 ← Résultats tests
+│
+├── cassandra/
+│   ├── data/                 ← Résultats scraping (JSON)
+│   ├── init.cql             ← Schéma tables
+│   └── README.md
+│
+├── scripts/
+│   ├── scrape.py            ← Raccourci scraping
+│   ├── verify_stack.py      ← Vérification services
+│   └── init_infrastructure.ps1
+│
+├── sql/
+│   └── queries.sql          ← Requêtes Trino
+│
+├── MODIFICATIONS.md         ← Documentation complète des changements
+├── QUICK_START.py           ← Guide rapide
+├── TEST_GUIDE.py            ← Guide interactif de test
+└── README.md                ← Ce fichier
+
+---
+
+## 📋 Modifications récentes (2026-06-01)
+
+### ✅ Supprimés
+- `masi_realtime_scraper.py` (redondance avec market_overview)
+- Tests obsolètes (test_01, test_03, test_05, test_06, etc.)
+
+### ✅ Ajoutés
+- `test_all_scrapers.py` - Test global
+- `cassandra/data/` - Dossier résultats scraping
+- `MODIFICATIONS.md` - Documentation complète
+- Mode test pour CassandraClient
+
+### ✅ Améliorations
+- `main.py` refactorisé - Scraping complet sans limites
+- Tests indépendants de Cassandra
+- Préparation pour Cassandra + Trino + Metabase
+
+**→ Voir `MODIFICATIONS.md` pour tous les détails**
+
+---
+
+## 🧪 Tests
 
 ## Vue globale du pipeline
 
@@ -86,38 +187,40 @@ Dashboard
 ## 📁 Structure du Projet
 
 ```
+
 casablanca-bourse-bigdata/
 │
-├── src/                          # Scraping & validation — Khadija
-│   ├── scraper.py                #   Fonction scrape_cotations()
-│   └── validator.py              #   Modèle Pydantic Cotation
+├── src/ # Scraping & validation — Khadija
+│ ├── scraper.py # Fonction scrape_cotations()
+│ └── validator.py # Modèle Pydantic Cotation
 │
-├── flows/                        # Orchestration Prefect — Joyce
-│   └── daily_scrape.py           #   Flow quotidien (déclenché à 18h)
+├── flows/ # Orchestration Prefect — Joyce
+│ └── daily_scrape.py # Flow quotidien (déclenché à 18h)
 │
-├── cassandra/                    # Base de données — Joyce
-│   └── init.cql                  #   Schéma keyspace + table cotations
+├── cassandra/ # Base de données — Joyce
+│ └── init.cql # Schéma keyspace + table cotations
 │
-├── trino/                        # Moteur SQL fédéré — Joyce
-│   └── catalog/
-│       └── cassandra.properties  #   Connecteur Trino → Cassandra
+├── trino/ # Moteur SQL fédéré — Joyce
+│ └── catalog/
+│ └── cassandra.properties # Connecteur Trino → Cassandra
 │
-├── sql/                          # Requêtes KPIs — Riad
-│   └── queries.sql               #   Top volumes, secteurs, évolutions...
+├── sql/ # Requêtes KPIs — Riad
+│ └── queries.sql # Top volumes, secteurs, évolutions...
 │
-├── docs/                         # Documentation & ressources
-│   └── architecture.png          #   Schéma du pipeline (optionnel)
+├── docs/ # Documentation & ressources
+│ └── architecture.png # Schéma du pipeline (optionnel)
 │
-├── tests/                        # Tests unitaires — Khadija
-│   └── test_scraper.py           #   Cas normaux, valeurs manquantes, timeout
+├── tests/ # Tests unitaires — Khadija
+│ └── test_scraper.py # Cas normaux, valeurs manquantes, timeout
 │
-├── docker-compose.yml            # Lance tous les services en une commande
-├── requirements.txt              # Dépendances Python
-├── .env.example                  # Modèle de variables d'environnement (à copier en .env)
-├── .env                          # Variables locales — NE PAS committer (dans .gitignore)
-├── .gitignore                    # Fichiers exclus du dépôt Git
-└── README.md                     # Ce fichier
-```
+├── docker-compose.yml # Lance tous les services en une commande
+├── requirements.txt # Dépendances Python
+├── .env.example # Modèle de variables d'environnement (à copier en .env)
+├── .env # Variables locales — NE PAS committer (dans .gitignore)
+├── .gitignore # Fichiers exclus du dépôt Git
+└── README.md # Ce fichier
+
+````
 
 ---
 
@@ -134,13 +237,14 @@ casablanca-bourse-bigdata/
 git clone https://github.com/kikjabouza/casablanca-bourse-bigdata.git
 cd casablanca-bourse-bigdata
 git checkout branch YOUR_BRANCH_NAME  # Khadija : khadija, Joyce : joyce, Riad : riad
-```
+````
 
 ### 2. Installer les dépendances Python
 
 ```bash
 python -m venv venv
 source venv/bin/activate        # Windows : venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 

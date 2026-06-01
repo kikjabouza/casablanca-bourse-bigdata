@@ -1,27 +1,692 @@
 [
   {
-    "ticker": "MNG",
-    "name": "MNG",
-    "id": 500
+    "ticker": "OATWN",
+    "name": "23DEC16 3.44% 7A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWN"
   },
   {
-    "ticker": "BCP",
-    "name": "BCP",
-    "id": 509
+    "ticker": "2ATHB",
+    "name": "2L ATH J01JAN2018",
+    "url": "/fr/live-market/instruments/2ATHB"
   },
   {
-    "ticker": "ATW",
-    "name": "ATW",
-    "id": 511
+    "ticker": "M2M",
+    "name": "M2M Group",
+    "url": "/fr/live-market/instruments/M2M"
   },
   {
-    "ticker": "IAM",
-    "name": "IAM",
-    "id": 510
+    "ticker": "TIM",
+    "name": "TIMAR",
+    "url": "/fr/live-market/instruments/TIM"
   },
   {
-    "ticker": "AGM",
-    "name": "AGM",
-    "id": 491
+    "ticker": "TIMA",
+    "name": "TIMAR (AN11 1P4)",
+    "url": "#"
+  },
+  {
+    "ticker": "TIMB",
+    "name": "DS TIM(AN15 1P5)",
+    "url": "#"
+  },
+  {
+    "ticker": "CGI",
+    "name": "CGI",
+    "url": "/fr/live-market/instruments/CGI"
+  },
+  {
+    "ticker": "ATL",
+    "name": "ATLANTASANAD",
+    "url": "/fr/live-market/instruments/ATL"
+  },
+  {
+    "ticker": "SNA",
+    "name": "STOKVIS NORD AFRIQUE",
+    "url": "/fr/live-market/instruments/SNA"
+  },
+  {
+    "ticker": "SNP",
+    "name": "SNEP",
+    "url": "/fr/live-market/instruments/SNP"
+  },
+  {
+    "ticker": "MIC",
+    "name": "MICRODATA",
+    "url": "/fr/live-market/instruments/MIC"
+  },
+  {
+    "ticker": "SLF",
+    "name": "SALAFIN",
+    "url": "/fr/live-market/instruments/SLF"
+  },
+  {
+    "ticker": "DLM",
+    "name": "DELATTRE LEVIVIER MAROC",
+    "url": "/fr/live-market/instruments/DLM"
+  },
+  {
+    "ticker": "DHO",
+    "name": "DELTA HOLDING",
+    "url": "/fr/live-market/instruments/DHO"
+  },
+  {
+    "ticker": "OOCPC",
+    "name": "14MAI2018 4.03% IND 100K OCP",
+    "url": "/fr/live-market/instruments/OOCPC"
+  },
+  {
+    "ticker": "BOA",
+    "name": "BANK OF AFRICA",
+    "url": "/fr/live-market/instruments/BOA"
+  },
+  {
+    "ticker": "CMT",
+    "name": "MINIERE TOUISSIT",
+    "url": "/fr/live-market/instruments/CMT"
+  },
+  {
+    "ticker": "ABOAA",
+    "name": "DA BOA 2/7 1996",
+    "url": "#"
+  },
+  {
+    "ticker": "ABOAB",
+    "name": "DA BOA 1/10 2000",
+    "url": "#"
+  },
+  {
+    "ticker": "LBV",
+    "name": "LABEL VIE",
+    "url": "/fr/live-market/instruments/LBV"
+  },
+  {
+    "ticker": "LBVA",
+    "name": "DS LBV (AN11 1P9)",
+    "url": "#"
+  },
+  {
+    "ticker": "ADI",
+    "name": "ALLIANCES",
+    "url": "/fr/live-market/instruments/ADI"
+  },
+  {
+    "ticker": "ADIA",
+    "name": "ADIA(AN12 100P121)",
+    "url": "#"
+  },
+  {
+    "ticker": "NKL",
+    "name": "ENNAKL",
+    "url": "/fr/live-market/instruments/NKL"
+  },
+  {
+    "ticker": "SAH",
+    "name": "SANLAM MAROC",
+    "url": "/fr/live-market/instruments/SAH"
+  },
+  {
+    "ticker": "STR",
+    "name": "STROC INDUSTRIE",
+    "url": "/fr/live-market/instruments/STR"
+  },
+  {
+    "ticker": "JET",
+    "name": "JET CONTRACTORS",
+    "url": "/fr/live-market/instruments/JET"
+  },
+  {
+    "ticker": "AFI",
+    "name": "AFRIC INDUSTRIES SA",
+    "url": "/fr/live-market/instruments/AFI"
+  },
+  {
+    "ticker": "S2M",
+    "name": "S.M MONETIQUE",
+    "url": "/fr/live-market/instruments/S2M"
+  },
+  {
+    "ticker": "TQM",
+    "name": "TAQA MOROCCO",
+    "url": "/fr/live-market/instruments/TQM"
+  },
+  {
+    "ticker": "IMO",
+    "name": "IMMORENTE INVEST",
+    "url": "/fr/live-market/instruments/IMO"
+  },
+  {
+    "ticker": "RDS",
+    "name": "RESIDENCES DAR SAADA",
+    "url": "/fr/live-market/instruments/RDS"
+  },
+  {
+    "ticker": "TMA",
+    "name": "TOTALENERGIES MARKETING MAROC",
+    "url": "/fr/live-market/instruments/TMA"
+  },
+  {
+    "ticker": "AFM",
+    "name": "AFMA",
+    "url": "/fr/live-market/instruments/AFM"
+  },
+  {
+    "ticker": "MSA",
+    "name": "SODEP-Marsa Maroc",
+    "url": "/fr/live-market/instruments/MSA"
+  },
+  {
+    "ticker": "OCIHC",
+    "name": "18MAI2018 4.02% 10A 100K CIH",
+    "url": "/fr/live-market/instruments/OCIHC"
+  },
+  {
+    "ticker": "SID",
+    "name": "SONASID",
+    "url": "/fr/live-market/instruments/SID"
+  },
+  {
+    "ticker": "OSOGD",
+    "name": "28JUN2018 4.00% 10A 100K SOG",
+    "url": "/fr/live-market/instruments/OSOGD"
+  },
+  {
+    "ticker": "FRT",
+    "name": "FERTIMA",
+    "url": "/fr/live-market/instruments/FRT"
+  },
+  {
+    "ticker": "OATWR",
+    "name": "29JUN2018 3.57% 7A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWR"
+  },
+  {
+    "ticker": "SMI",
+    "name": "SMI",
+    "url": "/fr/live-market/instruments/SMI"
+  },
+  {
+    "ticker": "OATWT",
+    "name": "29JUN2018 3.32% 7A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWT"
+  },
+  {
+    "ticker": "MAB",
+    "name": "MAGHREBAIL",
+    "url": "/fr/live-market/instruments/MAB"
+  },
+  {
+    "ticker": "MABA",
+    "name": "DS MAB(AN15 7P20)",
+    "url": "#"
+  },
+  {
+    "ticker": "ACSRB",
+    "name": "DA CSR 1/2 2018",
+    "url": "#"
+  },
+  {
+    "ticker": "ONA",
+    "name": "ONA",
+    "url": "/fr/live-market/instruments/ONA"
+  },
+  {
+    "ticker": "OCAMG",
+    "name": "01NOV2018 4.10% 10A 100K CAM",
+    "url": "/fr/live-market/instruments/OCAMG"
+  },
+  {
+    "ticker": "SJETA",
+    "name": "DS JET 5/21 2018",
+    "url": "#"
+  },
+  {
+    "ticker": "BNM",
+    "name": "BRANOMA",
+    "url": "/fr/live-market/instruments/BNM"
+  },
+  {
+    "ticker": "OOCPB",
+    "name": "23DEC2016 4.07% IND 100K OCP",
+    "url": "/fr/live-market/instruments/OOCPB"
+  },
+  {
+    "ticker": "OB131",
+    "name": "DU 100909 4.40% 5A CMT 1000",
+    "url": "/fr/live-market/instruments/OB131"
+  },
+  {
+    "ticker": "OSNIC",
+    "name": "10AOU2009 5.10% 10A 100K SNI",
+    "url": "/fr/live-market/instruments/OSNIC"
+  },
+  {
+    "ticker": "OOCFB",
+    "name": "25JAN2010 5.12% 15A 100K OCF",
+    "url": "/fr/live-market/instruments/OOCFB"
+  },
+  {
+    "ticker": "OB134",
+    "name": "DU 050310 5.40% 5A ADI 1000",
+    "url": "/fr/live-market/instruments/OB134"
+  },
+  {
+    "ticker": "OATWD",
+    "name": "29JUN2010 4.78% 7A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWD"
+  },
+  {
+    "ticker": "OATWE",
+    "name": "29JUN2010 2.63% 7A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWE"
+  },
+  {
+    "ticker": "OLYDA",
+    "name": "14JUL2010 5.62% 15A 100K LYD",
+    "url": "/fr/live-market/instruments/OLYDA"
+  },
+  {
+    "ticker": "OB138",
+    "name": "DU 210710 4.80% 5A GAZ 100000",
+    "url": "/fr/live-market/instruments/OB138"
+  },
+  {
+    "ticker": "OB140",
+    "name": "DU 110810 5,18% 5A ADH 100000",
+    "url": "/fr/live-market/instruments/OB140"
+  },
+  {
+    "ticker": "OB141",
+    "name": "DU 241210 5,50% 2A09M RIS 100",
+    "url": "/fr/live-market/instruments/OB141"
+  },
+  {
+    "ticker": "OB142",
+    "name": "DU 111010 5,50% 5A LBV 100000",
+    "url": "/fr/live-market/instruments/OB142"
+  },
+  {
+    "ticker": "OODAA",
+    "name": "16DEC2010 5.38% 10A 100K ODA",
+    "url": "/fr/live-market/instruments/OODAA"
+  },
+  {
+    "ticker": "OB145",
+    "name": "DU 311210 4.94% 5A CGI 100000",
+    "url": "/fr/live-market/instruments/OB145"
+  },
+  {
+    "ticker": "OMTCA",
+    "name": "31JAN2011 4.87% 7A 100K MTC",
+    "url": "/fr/live-market/instruments/OMTCA"
+  },
+  {
+    "ticker": "OCDMB",
+    "name": "29MAR2011 5.02% 10A 100K CDM",
+    "url": "/fr/live-market/instruments/OCDMB"
+  },
+  {
+    "ticker": "OATWF",
+    "name": "30JUN2011 4.77% 7A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWF"
+  },
+  {
+    "ticker": "OOCPA",
+    "name": "04OCT2011 4.46% 7A 100K OCP",
+    "url": "/fr/live-market/instruments/OOCPA"
+  },
+  {
+    "ticker": "OFECA",
+    "name": "20JAN2012 5.30% 15A 100K FEC",
+    "url": "/fr/live-market/instruments/OFECA"
+  },
+  {
+    "ticker": "OOCFC",
+    "name": "20OCT2011 5.11% 15A 100K OCF",
+    "url": "/fr/live-market/instruments/OOCFC"
+  },
+  {
+    "ticker": "ORDSA",
+    "name": "28JUN2012 5.47% 5A 100K RDS",
+    "url": "/fr/live-market/instruments/ORDSA"
+  },
+  {
+    "ticker": "OMTCB",
+    "name": "23DEC2011 5.12% 7A 100K MTC",
+    "url": "/fr/live-market/instruments/OMTCB"
+  },
+  {
+    "ticker": "OIMGA",
+    "name": "23JAN2012 5.38% 5A 100K IMG",
+    "url": "/fr/live-market/instruments/OIMGA"
+  },
+  {
+    "ticker": "OCATA",
+    "name": "06JUL2012 5.38% 5A 100K CAT",
+    "url": "/fr/live-market/instruments/OCATA"
+  },
+  {
+    "ticker": "OBCIA",
+    "name": "22NOV2012 6.04% 10A 100K BCI",
+    "url": "/fr/live-market/instruments/OBCIA"
+  },
+  {
+    "ticker": "OSOGB",
+    "name": "20DEC2012 5.98% 10A 100K SOG",
+    "url": "/fr/live-market/instruments/OSOGB"
+  },
+  {
+    "ticker": "OBOAD",
+    "name": "21JAN2013 6.18% 10A 100K BOA",
+    "url": "/fr/live-market/instruments/OBOAD"
+  },
+  {
+    "ticker": "OATWG",
+    "name": "27MAI2013 5.60% 5A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWG"
+  },
+  {
+    "ticker": "OAXCA",
+    "name": "31MAR2014 5.95% 5A 100K AXC",
+    "url": "/fr/live-market/instruments/OAXCA"
+  },
+  {
+    "ticker": "OCGIA",
+    "name": "09JUL2014 5.22% 5A 100K CGI",
+    "url": "/fr/live-market/instruments/OCGIA"
+  },
+  {
+    "ticker": "ORISA",
+    "name": "30SEP2014 5.87% 1A06M  100 RIS",
+    "url": "/fr/live-market/instruments/ORISA"
+  },
+  {
+    "ticker": "OATWH",
+    "name": "22DEC2014 4.75% 10A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWH"
+  },
+  {
+    "ticker": "OCIHA",
+    "name": "09JAN2015 4.75% 10A 100K CIH",
+    "url": "/fr/live-market/instruments/OCIHA"
+  },
+  {
+    "ticker": "OSOGC",
+    "name": "29JUN2015 4.77% 10A 100K SOG",
+    "url": "/fr/live-market/instruments/OSOGC"
+  },
+  {
+    "ticker": "OGAZA",
+    "name": "16JUL2015  4.00% 5A 100K GAZ",
+    "url": "/fr/live-market/instruments/OGAZA"
+  },
+  {
+    "ticker": "OMOXA",
+    "name": "16JUL2015 4.00% 5A 100K MOX",
+    "url": "/fr/live-market/instruments/OMOXA"
+  },
+  {
+    "ticker": "OATWI",
+    "name": "22DEC2015 4.13% 7A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWI"
+  },
+  {
+    "ticker": "OCAMA",
+    "name": "27NOV2015 4.42% 7A 100K CAM",
+    "url": "/fr/live-market/instruments/OCAMA"
+  },
+  {
+    "ticker": "OCAMB",
+    "name": "27NOV2015 4.80% 10A 100K CAM",
+    "url": "/fr/live-market/instruments/OCAMB"
+  },
+  {
+    "ticker": "OATWJ",
+    "name": "22DEC2015 4.52% 10A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWJ"
+  },
+  {
+    "ticker": "OBOAE",
+    "name": "28JUN2016 3.74% 10A 100K BOA",
+    "url": "/fr/live-market/instruments/OBOAE"
+  },
+  {
+    "ticker": "OATWM",
+    "name": "28JUN2016 3.74% 10A 100K ATW",
+    "url": "/fr/live-market/instruments/OATWM"
+  },
+  {
+    "ticker": "OCAMD",
+    "name": "12OCT2016 4.11% 7A 100K CAM",
+    "url": "/fr/live-market/instruments/OCAMD"
+  },
+  {
+    "ticker": "OCAMF",
+    "name": "12OCT2016 4.43% 10A 100K CAM",
+    "url": "/fr/live-market/instruments/OCAMF"
+  },
+  {
+    "ticker": "OCDMC",
+    "name": "21DEC2016 3.93% 10A 100K CDM",
+    "url": "/fr/live-market/instruments/OCDMC"
+  },
+  {
+    "ticker": "FTX",
+    "name": "FT EX",
+    "url": "/fr/live-market/instruments/FTX"
+  },
+  {
+    "ticker": "OFTXA",
+    "name": "9NOV2022 3.57% 7A 100K FTX",
+    "url": "/fr/live-market/instruments/OFTXA"
+  },
+  {
+    "ticker": "SCIHB",
+    "name": "DS CIH 11/483 2022",
+    "url": "#"
+  },
+  {
+    "ticker": "ABOAC",
+    "name": "DA BOA 1/65 2022",
+    "url": "#"
+  },
+  {
+    "ticker": "ADHA",
+    "name": "DS ADH(AN07 1P20)",
+    "url": "#"
+  },
+  {
+    "ticker": "OULC",
+    "name": "DS OULME(AN07 1P5)",
+    "url": "#"
+  },
+  {
+    "ticker": "LGTA",
+    "name": "LONGOMETAL 1P2",
+    "url": "#"
+  },
+  {
+    "ticker": "BCIB",
+    "name": "BMCI 1P4",
+    "url": "#"
+  },
+  {
+    "ticker": "NULL",
+    "name": "BNDE 50",
+    "url": "/fr/live-market/instruments/NULL"
+  },
+  {
+    "ticker": "CMAB",
+    "name": "CIMENTS MAROC 3P8",
+    "url": "#"
+  },
+  {
+    "ticker": "ONAB",
+    "name": "ONA 1P5",
+    "url": "#"
+  },
+  {
+    "ticker": "CSRC",
+    "name": "COSUMAR 13P7",
+    "url": "#"
+  },
+  {
+    "ticker": "CRNA",
+    "name": "CARNAUD 1P2",
+    "url": "#"
+  },
+  {
+    "ticker": "BCMB",
+    "name": "BCM 1P4",
+    "url": "#"
+  },
+  {
+    "ticker": "CDMA",
+    "name": "CDM 1P5",
+    "url": "#"
+  },
+  {
+    "ticker": "CMAA",
+    "name": "CIMENTS MAROC 2P5",
+    "url": "#"
+  },
+  {
+    "ticker": "SBMA",
+    "name": "BRASSERIES 1P4",
+    "url": "#"
+  },
+  {
+    "ticker": "CSRB",
+    "name": "COSUMAR 1P5",
+    "url": "#"
+  },
+  {
+    "ticker": "CLTA",
+    "name": "C. LAITIERE 1P10",
+    "url": "#"
+  },
+  {
+    "ticker": "CSRA",
+    "name": "COSUMAR 1P4",
+    "url": "#"
+  },
+  {
+    "ticker": "BCEC",
+    "name": "BMCE 3P20",
+    "url": "#"
+  },
+  {
+    "ticker": "ONAA",
+    "name": "ONA (1 P 10)",
+    "url": "#"
+  },
+  {
+    "ticker": "DIW",
+    "name": "FINANCIERE DIWAN",
+    "url": "/fr/live-market/instruments/DIW"
+  },
+  {
+    "ticker": "BCEB",
+    "name": "BMCE 2P17",
+    "url": "#"
+  },
+  {
+    "ticker": "BCEA",
+    "name": "BMCE 1P6",
+    "url": "#"
+  },
+  {
+    "ticker": "DIE",
+    "name": "DIAC EQUIPEMENT",
+    "url": "/fr/live-market/instruments/DIE"
+  },
+  {
+    "ticker": "REB50",
+    "name": "REBAB COMPANY(50)",
+    "url": "/fr/live-market/instruments/REB50"
+  },
+  {
+    "ticker": "SFC",
+    "name": "SOMAFIC",
+    "url": "/fr/live-market/instruments/SFC"
+  },
+  {
+    "ticker": "WFB",
+    "name": "WAFABANK",
+    "url": "/fr/live-market/instruments/WFB"
+  },
+  {
+    "ticker": "CRN",
+    "name": "CARNAUD",
+    "url": "/fr/live-market/instruments/CRN"
+  },
+  {
+    "ticker": "LGT",
+    "name": "LONGOMETAL",
+    "url": "/fr/live-market/instruments/LGT"
+  },
+  {
+    "ticker": "AKT",
+    "name": "AKDITAL",
+    "url": "/fr/live-market/instruments/AKT"
+  },
+  {
+    "ticker": "BKHT",
+    "name": "instrument BKHTest",
+    "url": "/fr/live-market/instruments/BKHT"
+  },
+  {
+    "ticker": "ABOAD",
+    "name": "DA BOA 1/55 2023",
+    "url": "#"
+  },
+  {
+    "ticker": "CFG",
+    "name": "CFG BANK",
+    "url": "/fr/live-market/instruments/CFG"
+  },
+  {
+    "ticker": "SMNGB",
+    "name": "DS MNG 3/16 2024",
+    "url": "#"
+  },
+  {
+    "ticker": "SCIHC",
+    "name": "DS CIH 9/281 2024",
+    "url": "#"
+  },
+  {
+    "ticker": "ABOAE",
+    "name": "DA BOA 1/66 2024",
+    "url": "#"
+  },
+  {
+    "ticker": "CMG",
+    "name": "CMGP GROUP",
+    "url": "/fr/live-market/instruments/CMG"
+  },
+  {
+    "ticker": "SCIHD",
+    "name": "DS CIH 3/23 2025",
+    "url": "#"
+  },
+  {
+    "ticker": "VCN",
+    "name": "VICENNE",
+    "url": "/fr/live-market/instruments/VCN"
+  },
+  {
+    "ticker": "ABOAF",
+    "name": "DA BOA 1/48 2025",
+    "url": "#"
+  },
+  {
+    "ticker": "CAP",
+    "name": "CASH PLUS S.A",
+    "url": "/fr/live-market/instruments/CAP"
+  },
+  {
+    "ticker": "GTM",
+    "name": "SGTM S.A",
+    "url": "/fr/live-market/instruments/GTM"
   }
 ]

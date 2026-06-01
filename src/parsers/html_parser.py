@@ -99,9 +99,19 @@ class HTMLParser:
                             info['listing_date'] = value
                         elif key == 'nombre_de_titres':
                             # Enlever les espaces et convertir en int
-                            info['shares_count'] = int(value.replace(' ', ''))
+                            cleaned = value.replace(' ', '').replace('-', '').strip()
+                            if cleaned and cleaned != '-':
+                                try:
+                                    info['shares_count'] = int(cleaned)
+                                except ValueError:
+                                    logger.debug(f"Skipping invalid shares_count: {value}")
                         elif key == 'valeur_nominale':
-                            info['nominal_value'] = float(value.replace(',', '.'))
+                            cleaned = value.replace(',', '.').replace('-', '').strip()
+                            if cleaned and cleaned != '-':
+                                try:
+                                    info['nominal_value'] = float(cleaned)
+                                except ValueError:
+                                    logger.debug(f"Skipping invalid nominal_value: {value}")
                         elif key == 'cycle_de_négociation':
                             info['trading_cycle'] = value
                         elif key == 'devise_de_cotation':
@@ -143,35 +153,40 @@ class HTMLParser:
                         key = th.get_text(strip=True).lower().replace(' ', '_')
                         value_str = td.get_text(strip=True).replace(' ', '').replace(',', '.')
                         
-                        # Convertir en nombre si possible
+                        # Convertir en nombre si possible, ignorer '-'
                         try:
-                            if '%' in value_str:
+                            if value_str == '-' or not value_str:
+                                value = None
+                            elif '%' in value_str:
                                 value = float(value_str.replace('%', ''))
                             else:
                                 value = float(value_str)
-                        except ValueError:
+                        except (ValueError, TypeError):
                             value = value_str
                         
-                        if key == 'cours_(mad)':
-                            session_data['current_price'] = value
-                        elif key == 'variation':
-                            session_data['variation'] = value
-                        elif key == 'ouverture':
-                            session_data['opening_price'] = value
-                        elif key == 'plus_haut':
-                            session_data['high_price'] = value
-                        elif key == 'plus_bas':
-                            session_data['low_price'] = value
-                        elif key == 'cours_de_clôture_veille':
-                            session_data['prev_close'] = value
-                        elif key == 'capitalisation':
-                            session_data['market_cap'] = value
-                        elif key == 'volume':
-                            session_data['volume'] = value
-                        elif key == 'quantité_échangée':
-                            session_data['quantity'] = int(value)
-                        elif key == 'nombre_de_transactions':
-                            session_data['trades_count'] = int(value)
+                        if value is not None:
+                            if key == 'cours_(mad)':
+                                session_data['current_price'] = value
+                            elif key == 'variation':
+                                session_data['variation'] = value
+                            elif key == 'ouverture':
+                                session_data['opening_price'] = value
+                            elif key == 'plus_haut':
+                                session_data['high_price'] = value
+                            elif key == 'plus_bas':
+                                session_data['low_price'] = value
+                            elif key == 'cours_de_clôture_veille':
+                                session_data['prev_close'] = value
+                            elif key == 'capitalisation':
+                                session_data['market_cap'] = value
+                            elif key == 'volume':
+                                session_data['volume'] = value
+                            elif key == 'quantité_échangée':
+                                if isinstance(value, (int, float)):
+                                    session_data['quantity'] = int(value)
+                            elif key == 'nombre_de_transactions':
+                                if isinstance(value, (int, float)):
+                                    session_data['trades_count'] = int(value)
         
         return session_data
     

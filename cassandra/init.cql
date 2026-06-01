@@ -22,6 +22,14 @@ CREATE TABLE IF NOT EXISTS instruments_static (
     updated_at timestamp
 );
 
+-- Liste des instruments (nom, URL, horodatage)
+CREATE TABLE IF NOT EXISTS instruments (
+    ticker text PRIMARY KEY,
+    name text,
+    url text,
+    updated_at timestamp
+);
+
 -- Prix quotidiens de séance
 CREATE TABLE IF NOT EXISTS daily_prices (
     ticker text,

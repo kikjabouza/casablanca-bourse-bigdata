@@ -30,9 +30,13 @@ class InstrumentDetailsScraper:
             html_content = response.text
             
             # Extraire les différentes catégories de données
-            static_info = self.parser.extract_instrument_static_info(html_content)
-            session_data = self.parser.extract_session_data(html_content)
-            historical_vars = self.parser.extract_historical_variations(html_content)
+            try:
+                static_info = self.parser.extract_instrument_static_info(html_content)
+                session_data = self.parser.extract_session_data(html_content)
+                historical_vars = self.parser.extract_historical_variations(html_content)
+            except Exception as parse_error:
+                logger.error(f"Erreur lors du parsing de {ticker}: {parse_error}")
+                return {}
             
             # Combiner toutes les données
             instrument_data = {
@@ -48,8 +52,17 @@ class InstrumentDetailsScraper:
             
             return instrument_data
             
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 404:
+                logger.warning(f"Instrument {ticker} non trouvé (404): {url}")
+            else:
+                logger.error(f"Erreur HTTP pour {ticker}: {e}")
+            return {}
         except requests.RequestException as e:
-            logger.error(f"Erreur lors du scraping de {ticker}: {e}")
+            logger.error(f"Erreur réseau lors du scraping de {ticker}: {e}")
+            return {}
+        except Exception as e:
+            logger.error(f"Erreur inattendue lors du scraping de {ticker}: {e}")
             return {}
     
     def _save_to_cassandra(self, data: Dict[str, Any]):
@@ -58,6 +71,11 @@ class InstrumentDetailsScraper:
         """
         ticker = data.get('ticker')
         if not ticker:
+            return
+        
+        # En mode test, sauvegarder en JSON
+        if self.cassandra.test_mode:
+            self.cassandra.save_instrument_json(ticker, data)
             return
         
         # Table des données statiques (une seule ligne par instrument)

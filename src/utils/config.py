@@ -74,6 +74,10 @@ class Config:
         return f"{cls.API_BASE_URL}/instrument_history"
 
     @classmethod
+    def get_instruments_api_url(cls, offset: int = 0, limit: int = 250) -> str:
+        return f"{cls.API_BASE_URL}/instrument?page[limit]={limit}&page[offset]={offset}"
+
+    @classmethod
     def get_market_watch_url(cls) -> str:
         return f"{cls.API_BASE_URL}/market_watch"
 

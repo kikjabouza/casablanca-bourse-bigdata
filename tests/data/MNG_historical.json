@@ -427,5 +427,16 @@
     "volume": 88984967.0,
     "current_price": 17405.0,
     "ratio": 1.0
+  },
+  {
+    "ticker": "MNG",
+    "date": "2026-06-01",
+    "close_price": 18098.0,
+    "open_price": 17927.0,
+    "high_price": 18894.0,
+    "low_price": 17500.0,
+    "volume": 53347361.0,
+    "current_price": 18098.0,
+    "ratio": 1.0
   }
 ]

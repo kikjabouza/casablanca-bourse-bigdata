@@ -1,0 +1,57 @@
+[
+  {
+    "ticker": "MNG",
+    "date": "2026-04-01",
+    "close_price": 9349.0,
+    "open_price": 8598.0,
+    "high_price": 9349.0,
+    "low_price": 8540.0,
+    "volume": 95803437.0,
+    "current_price": 9349.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "MNG",
+    "date": "2026-04-15",
+    "close_price": 13500.0,
+    "open_price": 14390.0,
+    "high_price": 14400.0,
+    "low_price": 12905.0,
+    "volume": 94277929.0,
+    "current_price": 13500.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "MNG",
+    "date": "2026-05-01",
+    "close_price": 13900.0,
+    "open_price": 13713.0,
+    "high_price": 14000.0,
+    "low_price": 13712.0,
+    "volume": 7791522.0,
+    "current_price": 13900.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "MNG",
+    "date": "2026-05-15",
+    "close_price": 14000.0,
+    "open_price": 14700.0,
+    "high_price": 15350.0,
+    "low_price": 14000.0,
+    "volume": 96325279.0,
+    "current_price": 14000.0,
+    "ratio": 1.0
+  },
+  {
+    "ticker": "MNG",
+    "date": "2026-06-01",
+    "close_price": 18098.0,
+    "open_price": 17927.0,
+    "high_price": 18894.0,
+    "low_price": 17500.0,
+    "volume": 53347361.0,
+    "current_price": 18098.0,
+    "ratio": 1.0
+  }
+]
