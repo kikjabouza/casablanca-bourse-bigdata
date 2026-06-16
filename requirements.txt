@@ -1,0 +1,27 @@
+# ─── Web Scraping ────────────────────────────────────────────────────────────
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.2.1
+urllib3==2.0.7
+
+# ─── Traitement des données ───────────────────────────────────────────────────
+pandas==2.2.2
+
+# ─── Validation des données ───────────────────────────────────────────────────
+pydantic==2.7.1
+
+# ─── Orchestration Prefect ────────────────────────────────────────────────────
+prefect==2.19.3
+griffe<0.33          # griffe>=0.33 supprime griffe.dataclasses, incompatible Prefect 2.x
+
+# ─── Base de données Cassandra ───────────────────────────────────────────────
+# IMPORTANT: cassandra-driver requiert Python 3.11 ou 3.12 (incompatible Python 3.13)
+# Si vous avez Python 3.13, utilisez: pyenv, conda ou Docker pour Python 3.11
+cassandra-driver==3.29.1
+
+# ─── Configuration ────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ─── Tests ───────────────────────────────────────────────────────────────────
+pytest==8.2.0
+pytest-mock==3.12.0

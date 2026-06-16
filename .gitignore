@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environnement virtuel
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Variables d'environnement (ne pas committer !)
+.env
+
+# Données de test (résultats JSON)
+tests/data/*.json
+
+# Cassandra data (volumes Docker, générés au runtime)
+cassandra/data/
+
+# OS
+.DS_Store
+Thumbs.db

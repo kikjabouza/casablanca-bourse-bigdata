@@ -1,0 +1,20 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# gcc requis pour compiler certains packages C (cassandra-driver, lxml)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    libev4 \
+    libev-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Le code source est monté en volume (voir docker-compose.yml)
+# Pas de COPY . . ici pour que les modifications soient prises en compte sans rebuild
+
+# serve_flows.py : utilise Prefect serve() → visible dans l'UI Prefect (localhost:4200)
+# auto_scraper.py : fallback sans Prefect (boucle Python simple)
+CMD ["python", "scripts/serve_flows.py"]
