@@ -115,8 +115,16 @@ services:
       - "3000:3000"
     volumes:
       - metabase-data:/metabase-data
+      - ./trino/etc/trino.cer:/tmp/trino.cer:ro
     environment:
       - MB_DB_FILE=/metabase-data/metabase.db
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        /opt/java/openjdk/bin/keytool -import -alias trino -file /tmp/trino.cer \
+          -keystore /tmp/ts.jks -storepass changeit -noprompt 2>/dev/null || true
+        exec /app/run_metabase.sh
     depends_on:
       trino:
         condition: service_healthy
