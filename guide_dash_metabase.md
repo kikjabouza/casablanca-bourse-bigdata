@@ -146,6 +146,7 @@ FROM cassandra.bourse_data.top_movers
 WHERE date = current_date
   AND direction = 'down'
 ORDER BY rank ASC;
+
 ```
 
 ---
@@ -385,18 +386,18 @@ Dans le dashboard, cliquer sur **+** à côté du nom de la page (en haut) → *
 
 Saisir le ticker de l'un des 10 instruments suivis :
 
-| Ticker | Société |
-|--------|---------|
-| ATW | Attijariwafa Bank |
-| BCP | Banque Centrale Populaire |
-| IAM | Itissalat Al-Maghrib |
-| MNG | Managem |
-| ADH | Douja Prom Addoha |
-| CIH | CIH Bank |
-| ALM | Aluminium du Maroc |
-| DHO | Delta Holding |
-| HPS | HPS |
-| ATH | Auto Hall |
+| Ticker | Société                   |
+| ------ | ------------------------- |
+| ATW    | Attijariwafa Bank         |
+| BCP    | Banque Centrale Populaire |
+| IAM    | Itissalat Al-Maghrib      |
+| MNG    | Managem                   |
+| ADH    | Douja Prom Addoha         |
+| CIH    | CIH Bank                  |
+| ALM    | Aluminium du Maroc        |
+| DHO    | Delta Holding             |
+| HPS    | HPS                       |
+| ATH    | Auto Hall                 |
 
 ---
 

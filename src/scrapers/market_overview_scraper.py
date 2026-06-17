@@ -518,6 +518,20 @@ class MarketOverviewScraper:
             logger.debug("top_movers: variation=None (hors heures de marché) → données Cassandra préservées")
             return []
 
+        # Filtrer par signe : une hausse doit avoir variation > 0, une baisse < 0.
+        # Évite de stocker des "hausses" à variation négative les jours très baissiers.
+        if positive:
+            movers = [m for m in movers if m.get("variation", 0.0) > 0]
+        else:
+            movers = [m for m in movers if m.get("variation", 0.0) < 0]
+
+        if not movers:
+            logger.debug(
+                f"top_movers ({'up' if positive else 'down'}): aucun instrument avec variation "
+                f"{'> 0' if positive else '< 0'} → données Cassandra préservées"
+            )
+            return []
+
         movers.sort(key=lambda r: r.get("variation", 0.0), reverse=positive)
         return movers[:5]
 
