@@ -1,4 +1,4 @@
-import time
+﻿import time
 from functools import wraps
 from src.utils.logger import get_logger
 
@@ -28,7 +28,7 @@ def safe_float(value, default=None):
     if value is None:
         return default
     try:
-        return float(str(value).replace(',', '.').replace(' ', '').replace('\xa0', ''))
+        return float(str(value).replace(',', '.').replace('\xa0', '').replace(' ', '').replace(' ', ''))
     except (ValueError, TypeError):
         return default
 

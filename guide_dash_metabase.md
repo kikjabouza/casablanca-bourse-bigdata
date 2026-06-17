@@ -100,6 +100,20 @@ WHERE ms.date = current_date
 LIMIT 1;
 ```
 
+** MASI ESG intraday (temps réel) — à ajouter en plus du KPI MASI quotidien **
+
+```sql
+  SELECT
+      value       AS valeur_masi_esg,
+      timestamp   AS heure_utc,
+      scraped_at  AS scrape_a
+  FROM cassandra.bourse_data.intraday_indices
+  WHERE index_name = 'MASI_ESG'
+    AND date = current_date
+  ORDER BY timestamp DESC
+  LIMIT 1
+```
+
 > Pour chaque métrique (masi, masi_var_pct, volume_milliards, capitalisation_milliards) :
 > cliquer sur **Visualiser** → choisir **Nombre** → enregistrer sous un nom distinct
 > 6 KPIs: `KPI — Résumé du jour`,`KPI — MASI`, `KPI — MASI20`, `KPI — Capitalisation`, `KPI — Volume`, `KPI — MASI VAR PCT`.
@@ -142,12 +156,21 @@ ORDER BY rank ASC;
 **Visualisation :** Camembert
 
 ```sql
-SELECT
-    COUNT(CASE WHEN variation > 0 THEN 1 END) AS en_hausse,
-    COUNT(CASE WHEN variation < 0 THEN 1 END) AS en_baisse,
-    COUNT(CASE WHEN variation = 0 THEN 1 END) AS stables
-FROM cassandra.bourse_data.daily_prices
-WHERE date = current_date;
+  SELECT 'En hausse' AS statut, COUNT(*) AS nombre
+  FROM cassandra.bourse_data.daily_prices
+  WHERE date = current_date AND variation > 0
+
+  UNION ALL
+
+  SELECT 'En baisse' AS statut, COUNT(*) AS nombre
+  FROM cassandra.bourse_data.daily_prices
+  WHERE date = current_date AND variation < 0
+
+  UNION ALL
+
+  SELECT 'Stables' AS statut, COUNT(*) AS nombre
+  FROM cassandra.bourse_data.daily_prices
+  WHERE date = current_date AND variation = 0;
 ```
 
 > Après **Visualiser** → cliquer sur l'icône de graphique → choisir **Camembert**.
@@ -360,9 +383,20 @@ Dans le dashboard, cliquer sur **+** à côté du nom de la page (en haut) → *
 
 ### Utilisation du filtre
 
-- Saisir `ATW` → affiche données Attijariwafa Bank
-- Saisir `BCP` → affiche données Banque Centrale Populaire
-- Saisir `MNG` → affiche données Managem
+Saisir le ticker de l'un des 10 instruments suivis :
+
+| Ticker | Société |
+|--------|---------|
+| ATW | Attijariwafa Bank |
+| BCP | Banque Centrale Populaire |
+| IAM | Itissalat Al-Maghrib |
+| MNG | Managem |
+| ADH | Douja Prom Addoha |
+| CIH | CIH Bank |
+| ALM | Aluminium du Maroc |
+| DHO | Delta Holding |
+| HPS | HPS |
+| ATH | Auto Hall |
 
 ---
 

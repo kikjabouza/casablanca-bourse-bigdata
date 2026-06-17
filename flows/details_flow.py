@@ -1,7 +1,7 @@
 """
 Flow Prefect : Détails des instruments
 Schedule : toutes les 15 minutes
-Instruments ciblés : 3 instruments configurés dans TRACKED_INSTRUMENTS (.env)
+Instruments ciblés : 10 instruments configurés dans TRACKED_INSTRUMENTS (docker-compose.yml / .env)
 Sauvegarde : instruments_static + daily_prices (upsert de la séance du jour)
 """
 import sys
@@ -24,7 +24,7 @@ def scrape_details_task(ticker: str) -> Dict[str, Any]:
     return scraper.scrape_instrument(ticker)
 
 
-@flow(name="details-flow", description="Mise à jour des détails de 3 instruments toutes les 15 min")
+@flow(name="details-flow", description="Mise à jour des détails de 10 instruments toutes les 15 min")
 def details_flow() -> None:
     logger = get_run_logger()
     config = Config()

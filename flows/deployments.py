@@ -7,8 +7,8 @@ Usage (après démarrage du serveur Prefect):
 Schedules configurés:
   - instruments-daily     : Lun-Ven 18h00 (liste complète, upsert si changement)
   - market-overview-2min  : toutes les 2 minutes (indices, stats, top movers)
-  - details-15min         : toutes les 15 minutes (3 instruments: ATW, BCP, MNG)
-  - historical-daily      : Lun-Ven 19h00 (ajout du dernier jour historique)
+  - details-15min         : toutes les 15 minutes (10 instruments: ATW,BCP,IAM,MNG,ADH,CIH,ALM,DHO,HPS,ATH)
+  - historical-daily      : Lun-Ven 19h00 (ajout du dernier jour historique pour les 10 instruments)
 """
 import os
 import sys
@@ -53,11 +53,11 @@ def deploy_all() -> None:
         tags=["bourse", "market", "intraday"],
     )
 
-    # 3. Détails 3 instruments — toutes les 15 minutes
+    # 3. Détails 10 instruments — toutes les 15 minutes
     dep_details = Deployment.build_from_flow(
         flow=details_flow,
         name="details-15min",
-        description="Détails de séance pour ATW, BCP, MNG toutes les 15 minutes",
+        description="Détails de séance pour les 10 instruments suivis (TRACKED_INSTRUMENTS) toutes les 15 minutes",
         schedule=IntervalSchedule(interval=timedelta(minutes=15)),
         tags=["bourse", "details", "intraday"],
     )
@@ -66,7 +66,7 @@ def deploy_all() -> None:
     dep_historical = Deployment.build_from_flow(
         flow=historical_daily_flow,
         name="historical-daily",
-        description="Ajout du dernier jour historique pour les 3 instruments suivis",
+        description="Ajout du dernier jour historique pour les 10 instruments suivis",
         schedule=CronSchedule(cron="0 19 * * 1-5", timezone="Africa/Casablanca"),
         tags=["bourse", "historical", "daily"],
     )

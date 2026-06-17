@@ -4,7 +4,7 @@ Deux modes:
   - historical_initial_flow : chargement d'1 an complet (à exécuter 1 seule fois)
   - historical_daily_flow   : ajout du dernier jour (schedule: chaque jour à 19h00)
 
-Instruments ciblés : 3 instruments configurés dans TRACKED_INSTRUMENTS (.env)
+Instruments ciblés : 10 instruments configurés dans TRACKED_INSTRUMENTS (docker-compose.yml / .env)
 Sauvegarde : table historical_prices (OHLC + volume ajusté)
 """
 import sys
@@ -35,7 +35,7 @@ def scrape_historical_task(
 
 @flow(
     name="historical-initial-flow",
-    description="Chargement initial: 1 an d'historique pour 3 instruments (exécution unique)",
+    description="Chargement initial: 1 an d'historique pour les 10 instruments suivis (exécution unique)",
 )
 def historical_initial_flow() -> None:
     """
@@ -60,7 +60,7 @@ def historical_initial_flow() -> None:
 
 @flow(
     name="historical-daily-flow",
-    description="Ajout quotidien du dernier jour d'historique pour 3 instruments",
+    description="Ajout quotidien du dernier jour d'historique pour les 10 instruments suivis",
 )
 def historical_daily_flow() -> None:
     """

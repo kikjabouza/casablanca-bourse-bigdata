@@ -54,9 +54,10 @@ ORDER BY date ASC;
 
 -- ─── 4. Statistiques globales du marché — 7 derniers jours ──────────────────
 -- Graphique: KPI / tableau
+-- Volume en millions MAD (ex: 266.78 M) | Capitalisation en milliards MAD (ex: 1079.02 Mrd)
 SELECT
     date,
-    ROUND(global_volume / 1e9, 2)  AS volume_milliards_mad,
+    ROUND(global_volume / 1e6, 2)  AS volume_millions_mad,
     ROUND(market_cap / 1e9, 2)     AS capitalisation_milliards_mad
 FROM cassandra.bourse_data.market_stats
 ORDER BY date DESC
@@ -146,13 +147,14 @@ ORDER BY date ASC;
 
 -- ─── 12. KPI résumé du jour (vue synthèse pour le dashboard) ─────────────────
 -- Cartes KPI Metabase
+-- Volume en millions MAD (ex: 266.78) | Capitalisation en milliards MAD (ex: 1079.02)
 SELECT
     ms.date,
-    ROUND(di_masi.value, 2)         AS masi,
-    ROUND(di_masi.variation, 2)     AS masi_var_pct,
-    ROUND(di_m20.value, 2)          AS masi20,
-    ROUND(ms.global_volume / 1e9, 2) AS volume_milliards,
-    ROUND(ms.market_cap / 1e9, 2)   AS capitalisation_milliards
+    ROUND(di_masi.value, 2)          AS masi,
+    ROUND(di_masi.variation, 2)      AS masi_var_pct,
+    ROUND(di_m20.value, 2)           AS masi20,
+    ROUND(ms.global_volume / 1e6, 2) AS volume_millions,
+    ROUND(ms.market_cap / 1e9, 2)    AS capitalisation_milliards
 FROM cassandra.bourse_data.market_stats ms
 LEFT JOIN cassandra.bourse_data.daily_indices di_masi
     ON ms.date = di_masi.date AND di_masi.index_name = 'MASI'

@@ -52,7 +52,7 @@ CASSANDRA_HOST=localhost        # depuis le PC hôte
 CASSANDRA_PORT=9042
 CASSANDRA_KEYSPACE=bourse_data
 CASSANDRA_STUB=false            # false = connexion réelle
-TRACKED_INSTRUMENTS=ATW,BCP,MNG # 3 instruments suivis
+TRACKED_INSTRUMENTS=ATW,BCP,IAM,MNG,ADH,CIH,ALM,DHO,HPS,ATH  # 10 instruments suivis
 PREFECT_API_URL=http://localhost:4200/api
 ```
 
@@ -156,7 +156,7 @@ Fichiers JSON générés dans `tests/data/` :
 ## ÉTAPE 6 — Chargement initial des données (1 seule fois)
 
 ```powershell
-# Charger tous les instruments + 1 an d'historique OHLC pour ATW, BCP, MNG
+# Charger tous les instruments + 1 an d'historique OHLC pour les 10 instruments suivis
 python scripts/run_initial_load.py
 ```
 
@@ -185,7 +185,9 @@ Logs attendus :
 ```
 Deployments enregistrés :
   → market-overview-2min  : toutes les 2 minutes
-  → details-15min         : toutes les 15 minutes
+  → details-15min         : toutes les 15 minutes (10 instruments)
+  → instruments-daily     : Lun-Ven 18h00 (Casablanca)
+  → historical-daily      : Lun-Ven 19h00 (Casablanca)
 Visualiser les runs : http://localhost:4200/deployments
 Your deployments are being served and polling for scheduled runs!
 ```
@@ -288,7 +290,7 @@ scraper-worker [Docker]
   ├── market_overview_flow  → toutes les 2 min
   │     daily_indices, market_stats, top_movers, intraday_indices
   └── details_flow          → toutes les 15 min
-        daily_prices, instruments_static (ATW, BCP, MNG)
+        daily_prices, instruments_static (10 instruments TRACKED_INSTRUMENTS)
         │
         │  CQL INSERT (cassandra-driver)
         ▼

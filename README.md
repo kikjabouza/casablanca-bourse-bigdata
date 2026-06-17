@@ -13,8 +13,8 @@ Site Bourse de Casablanca (casablanca-bourse.com)
         ▼
 [Scrapers Python] — src/scrapers/
   ├── instruments_list_scraper.py   → 1 fois/jour   → tous les instruments
-  ├── instrument_details_scraper.py → toutes 15 min → ATW, BCP, MNG
-  ├── historical_data_scraper.py    → 1 an initial + 1/jour → ATW, BCP, MNG
+  ├── instrument_details_scraper.py → toutes 15 min → 10 instruments (TRACKED_INSTRUMENTS)
+  ├── historical_data_scraper.py    → 1 an initial + 1/jour → 10 instruments (TRACKED_INSTRUMENTS)
   └── market_overview_scraper.py   → toutes 2 min  → indices, stats, top movers
         │
         ▼
@@ -81,15 +81,22 @@ Projet_BD/
 
 ## Instruments suivis
 
-Les détails et l'historique sont scrappés pour 3 instruments représentatifs:
+Les détails et l'historique sont scrappés pour 10 instruments :
 
 | Ticker | Nom | Secteur |
 |--------|-----|---------|
 | ATW | Attijariwafa Bank | Banques |
 | BCP | Banque Centrale Populaire | Banques |
+| IAM | Itissalat Al-Maghrib | Télécoms |
 | MNG | Managem | Mines |
+| ADH | Douja Prom Addoha | Immobilier |
+| CIH | CIH Bank | Banques |
+| ALM | Aluminium du Maroc | Industrie |
+| DHO | Delta Holding | Industrie |
+| HPS | HPS | Technologie |
+| ATH | Auto Hall | Distribution |
 
-Modifiable via `.env`: `TRACKED_INSTRUMENTS=ATW,BCP,MNG`
+Modifiable via `.env` : `TRACKED_INSTRUMENTS=ATW,BCP,IAM,MNG,ADH,CIH,ALM,DHO,HPS,ATH`
 
 ---
 
@@ -99,8 +106,8 @@ Modifiable via `.env`: `TRACKED_INSTRUMENTS=ATW,BCP,MNG`
 |------|-----------|---------|
 | `instruments_flow` | 18h00 Lun-Ven | Liste complète (upsert si changement) |
 | `market_overview_flow` | Toutes les 2 min | Indices + stats + top movers |
-| `details_flow` | Toutes les 15 min | Prix de séance ATW, BCP, MNG |
-| `historical_daily_flow` | 19h00 Lun-Ven | Dernier jour historique ATW, BCP, MNG |
+| `details_flow` | Toutes les 15 min | Prix de séance des 10 instruments |
+| `historical_daily_flow` | 19h00 Lun-Ven | Dernier jour historique des 10 instruments |
 
 ---
 

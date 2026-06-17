@@ -103,7 +103,7 @@ services:
       - PREFECT_API_URL=http://prefect-server:4200/api
       # Scraping
       - BOURSE_BASE_URL=https://www.casablanca-bourse.com
-      - TRACKED_INSTRUMENTS=ATW,BCP,MNG
+      - TRACKED_INSTRUMENTS=ATW,BCP,IAM,MNG,ADH,CIH,ALM,DHO,HPS,ATH
       - REQUEST_DELAY=0.5
     restart: unless-stopped
 

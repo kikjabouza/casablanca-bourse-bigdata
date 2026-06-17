@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS instruments (
 );
 
 -- ─── Table 2: Informations statiques par instrument ───────────────────────────
--- Mise à jour: toutes les 15 min (pour les 3 instruments suivis)
+-- Mise à jour: toutes les 15 min (pour les 10 instruments suivis)
 CREATE TABLE IF NOT EXISTS instruments_static (
     ticker          text PRIMARY KEY,
     isin            text,
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS daily_prices (
 -- ─── Table 4: Historique long terme OHLC ─────────────────────────────────────
 -- Chargement initial: 1 an complet
 -- Mise à jour: 1 fois/jour (dernier jour uniquement)
--- Instruments: ATW, BCP, MNG uniquement
+-- Instruments: les 10 instruments configurés dans TRACKED_INSTRUMENTS
 CREATE TABLE IF NOT EXISTS historical_prices (
     ticker          text,
     date            date,

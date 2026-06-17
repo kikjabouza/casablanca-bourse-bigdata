@@ -64,10 +64,14 @@ class Config:
     DEFAULT_LIMIT: int = 250
     MAX_OFFSET: int = 5000
 
-    # ─── Instruments suivis pour détails + historique (3 instruments) ─────────
+    # ─── Instruments suivis pour détails + historique (10 instruments) ────────
+    # Personnalisable via la variable d'env TRACKED_INSTRUMENTS (ex: "ATW,BCP,IAM,...")
     TRACKED_INSTRUMENTS: List[str] = [
         t.strip()
-        for t in os.getenv("TRACKED_INSTRUMENTS", "ATW,BCP,MNG").split(",")
+        for t in os.getenv(
+            "TRACKED_INSTRUMENTS",
+            "ATW,BCP,IAM,MNG,ADH,CIH,ALM,DHO,HPS,ATH"
+        ).split(",")
         if t.strip()
     ]
 
